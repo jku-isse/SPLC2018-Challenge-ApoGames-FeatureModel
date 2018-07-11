@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="Root">
+				<and mandatory="true" name="ApoBase">
+					<and mandatory="true" name="Menu">
+						<feature mandatory="true" name="Play"/>
+						<feature name="Scores"/>
+						<feature name="Sound"/>
+					</and>
+					<and name="Levels">
+						<feature name="Editor"/>
+					</and>
+					<and name="Restart">
+						<feature name="HighScores"/>
+					</and>
+					<feature name="Load"/>
+					<feature name="Time"/>
+					<feature name="Stop"/>
+					<feature name="PlayWithMouse"/>
+					<feature name="PlayWithKeyboard"/>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<disj>
+					<not>
+						<var>PlayWithMouse</var>
+					</not>
+					<not>
+						<var>PlayWithKeyboard</var>
+					</not>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>HighScores</var>
+					</not>
+					<var>Scores</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Sound</var>
+					</not>
+					<not>
+						<var>Time</var>
+					</not>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Sound</var>
+					</not>
+					<not>
+						<var>Stop</var>
+					</not>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Stop</var>
+					</not>
+					<not>
+						<var>HighScores</var>
+					</not>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Stop</var>
+					</not>
+					<var>Scores</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Restart</var>
+					</not>
+					<var>ApoBase</var>
+				</disj>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

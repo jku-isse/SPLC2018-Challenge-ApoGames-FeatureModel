@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fTGSAE3_EeihRf4zvfRhKw" name="ApoGame">
+  <packagedElement xmi:type="uml:Package" xmi:id="_fYcsEE3_EeihRf4zvfRhKw" name="apoGame">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYkA0U3_EeihRf4zvfRhKw" name="entity">
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYnEIE3_EeihRf4zvfRhKw" name="ApoBotPlayer" visibility="public">
+        <generalization xmi:id="_fYnEI03_EeihRf4zvfRhKw" general="_fYnEIk3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZfN4E3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZfN4U3_EeihRf4zvfRhKw" name="background" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZfN4k3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZfN403_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZfN5E3_EeihRf4zvfRhKw" name="width" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZfN5U3_EeihRf4zvfRhKw" name="height" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZfN5k3_EeihRf4zvfRhKw" name="tiles" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZfN503_EeihRf4zvfRhKw" name="time" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZfN6E3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZfN6U3_EeihRf4zvfRhKw" name="isBUp" visibility="public">
+          <ownedParameter xmi:id="_fZfN6k3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZfN603_EeihRf4zvfRhKw" name="setBUp" visibility="public">
+          <ownedParameter xmi:id="_fZf08E3_EeihRf4zvfRhKw" name="up" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZf08U3_EeihRf4zvfRhKw" name="getJumpHeight" visibility="public">
+          <ownedParameter xmi:id="_fZf08k3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZf0803_EeihRf4zvfRhKw" name="setJumpHeight" visibility="public">
+          <ownedParameter xmi:id="_fZf09E3_EeihRf4zvfRhKw" name="jumpHeight" type="_fYnrME3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZf09U3_EeihRf4zvfRhKw" name="getCurJumpHeight" visibility="public">
+          <ownedParameter xmi:id="_fZf09k3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZf0903_EeihRf4zvfRhKw" name="setCurJumpHeight" visibility="public">
+          <ownedParameter xmi:id="_fZf0-E3_EeihRf4zvfRhKw" name="curJumpHeight" type="_fYnrME3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZf0-U3_EeihRf4zvfRhKw" name="isBJump" visibility="public">
+          <ownedParameter xmi:id="_fZf0-k3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZf0-03_EeihRf4zvfRhKw" name="setBJump" visibility="public">
+          <ownedParameter xmi:id="_fZgcAE3_EeihRf4zvfRhKw" name="jump" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZgcAU3_EeihRf4zvfRhKw" name="getRunX" visibility="public">
+          <ownedParameter xmi:id="_fZgcAk3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZgcA03_EeihRf4zvfRhKw" name="setRunX" visibility="public">
+          <ownedParameter xmi:id="_fZgcBE3_EeihRf4zvfRhKw" name="runX" type="_fYnrME3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZgcBU3_EeihRf4zvfRhKw" name="getRunY" visibility="public">
+          <ownedParameter xmi:id="_fZgcBk3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZgcB03_EeihRf4zvfRhKw" name="setRunY" visibility="public">
+          <ownedParameter xmi:id="_fZhDEE3_EeihRf4zvfRhKw" name="runY" type="_fYnrME3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhDEU3_EeihRf4zvfRhKw" name="isBRun" visibility="public">
+          <ownedParameter xmi:id="_fZhDEk3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhDE03_EeihRf4zvfRhKw" name="setBRun" visibility="public">
+          <ownedParameter xmi:id="_fZhDFE3_EeihRf4zvfRhKw" name="run" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhDFU3_EeihRf4zvfRhKw" name="getStartDir" visibility="public">
+          <ownedParameter xmi:id="_fZhDFk3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhDF03_EeihRf4zvfRhKw" name="setStartDir" visibility="public">
+          <ownedParameter xmi:id="_fZhDGE3_EeihRf4zvfRhKw" name="startDir" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhqIE3_EeihRf4zvfRhKw" name="getCurDir" visibility="public">
+          <ownedParameter xmi:id="_fZhqIU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhqIk3_EeihRf4zvfRhKw" name="setCurDir" visibility="public">
+          <ownedParameter xmi:id="_fZhqI03_EeihRf4zvfRhKw" name="curDir" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhqJE3_EeihRf4zvfRhKw" name="think" visibility="public">
+          <ownedParameter xmi:id="_fZhqJU3_EeihRf4zvfRhKw" name="delta" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZhqJk3_EeihRf4zvfRhKw" name="render" visibility="public">
+          <ownedParameter xmi:id="_fZhqJ03_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZhqKE3_EeihRf4zvfRhKw" name="changeX" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZhqKU3_EeihRf4zvfRhKw" name="changeY" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYoSQE3_EeihRf4zvfRhKw" name="ApoBotEntity" visibility="public">
+        <generalization xmi:id="_fYoSQk3_EeihRf4zvfRhKw" general="_fYoSQU3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZiRME3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZiRMU3_EeihRf4zvfRhKw" name="command" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZiRMk3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZiRM03_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZiRNE3_EeihRf4zvfRhKw" name="width" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZiRNU3_EeihRf4zvfRhKw" name="height" type="_fYnrME3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZiRNk3_EeihRf4zvfRhKw" name="getCommand" visibility="public">
+          <ownedParameter xmi:id="_fZiRN03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZiROE3_EeihRf4zvfRhKw" name="setCommand" visibility="public">
+          <ownedParameter xmi:id="_fZiROU3_EeihRf4zvfRhKw" name="command" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fYfIUE3_EeihRf4zvfRhKw" name="ApoBotMain" visibility="public">
+      <generalization xmi:id="_fYfIVE3_EeihRf4zvfRhKw" general="_fYfIU03_EeihRf4zvfRhKw"/>
+      <ownedOperation xmi:id="_fZPWQE3_EeihRf4zvfRhKw" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_fZPWQU3_EeihRf4zvfRhKw" name="args" type="_fYhkkE3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZP9UE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_fZP9UU3_EeihRf4zvfRhKw" name="splashUrl" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZP9Uk3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fYhkkU3_EeihRf4zvfRhKw" name="ApoBotConstants" visibility="public">
+      <generalization xmi:id="_fYiLoU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+      <ownedAttribute xmi:id="_fZP9U03_EeihRf4zvfRhKw" name="SIZE" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZP9VE3_EeihRf4zvfRhKw" name="WAIT_TIME_THINK" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZP9VU3_EeihRf4zvfRhKw" name="WAIT_TIME_RENDER" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZP9Vk3_EeihRf4zvfRhKw" name="GAME_WIDTH" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkYE3_EeihRf4zvfRhKw" name="GAME_HEIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkYU3_EeihRf4zvfRhKw" name="GAME_GAME_WIDTH" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkYk3_EeihRf4zvfRhKw" name="GAME_GAME_HEIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkY03_EeihRf4zvfRhKw" name="GAME_MENU_WIDTH" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkZE3_EeihRf4zvfRhKw" name="GAME_MENU_HEIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkZU3_EeihRf4zvfRhKw" name="ANIMATION_TIME" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkZk3_EeihRf4zvfRhKw" name="TILE_WIDTH" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkZ03_EeihRf4zvfRhKw" name="TILE_HEIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkaE3_EeihRf4zvfRhKw" name="GROUND_EMPTY" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkaU3_EeihRf4zvfRhKw" name="GROUND_ORIGINAL" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZQkak3_EeihRf4zvfRhKw" name="GROUND_GOAL" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLcE3_EeihRf4zvfRhKw" name="GROUND_REAL_EMPTY" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLcU3_EeihRf4zvfRhKw" name="PLAYER" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLck3_EeihRf4zvfRhKw" name="DIR_NORTH_UPLEFT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLc03_EeihRf4zvfRhKw" name="DIR_EAST_UPRIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLdE3_EeihRf4zvfRhKw" name="DIR_SOUTH_DOWNRIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLdU3_EeihRf4zvfRhKw" name="DIR_WEST_DOWNLEFT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLdk3_EeihRf4zvfRhKw" name="BUTTON_MENU" visibility="public" isLeaf="true" isStatic="true" type="_fYiysE3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLd03_EeihRf4zvfRhKw" name="BUTTON_EDITOR" visibility="public" isLeaf="true" isStatic="true" type="_fYiysE3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRLeE3_EeihRf4zvfRhKw" name="BUTTON_GAME" visibility="public" isLeaf="true" isStatic="true" type="_fYiysE3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRygE3_EeihRf4zvfRhKw" name="BUTTON_TUTORIAL" visibility="public" isLeaf="true" isStatic="true" type="_fYiysE3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRygU3_EeihRf4zvfRhKw" name="LEVELS" visibility="public" isLeaf="true" isStatic="true" type="_fYhkkE3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRygk3_EeihRf4zvfRhKw" name="FONT_MENU" visibility="public" isLeaf="true" isStatic="true" type="_fYiysk3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRyg03_EeihRf4zvfRhKw" name="FONT_WIN" visibility="public" isLeaf="true" isStatic="true" type="_fYiysk3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRyhE3_EeihRf4zvfRhKw" name="FORWARD" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRyhU3_EeihRf4zvfRhKw" name="LEFT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRyhk3_EeihRf4zvfRhKw" name="RIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZRyh03_EeihRf4zvfRhKw" name="JUMP" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZSZkE3_EeihRf4zvfRhKw" name="REDYE" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZSZkU3_EeihRf4zvfRhKw" name="FUNCTION_ONE" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZSZkk3_EeihRf4zvfRhKw" name="FUNCTION_TWO" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_fZSZk03_EeihRf4zvfRhKw" name="TUTORIAL_SPEECH" visibility="public" isLeaf="true" isStatic="true" type="_fYhkkE3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedOperation xmi:id="_fZSZlE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fYiys03_EeihRf4zvfRhKw" name="ApoBotApplet" visibility="public">
+      <generalization xmi:id="_fYjZwE3_EeihRf4zvfRhKw" general="_fYiytE3_EeihRf4zvfRhKw"/>
+      <ownedOperation xmi:id="_fZSZlU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+      <ownedOperation xmi:id="_fZSZlk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_fZTAoE3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZTAoU3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZTAok3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fYjZwU3_EeihRf4zvfRhKw" name="ApoBotComponent" visibility="public" isAbstract="true">
+      <generalization xmi:id="_fYjZw03_EeihRf4zvfRhKw" general="_fYjZwk3_EeihRf4zvfRhKw"/>
+      <ownedAttribute xmi:id="_fZTAo03_EeihRf4zvfRhKw" name="APPLET_LEVEL" visibility="public" isLeaf="true" isStatic="true" type="_fYg9gk3_EeihRf4zvfRhKw" isReadOnly="true"/>
+      <ownedOperation xmi:id="_fZTApE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_fZTApU3_EeihRf4zvfRhKw" name="mouse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZTApk3_EeihRf4zvfRhKw" name="key" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZTAp03_EeihRf4zvfRhKw" name="wait_time_think" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZTAqE3_EeihRf4zvfRhKw" name="wait_time_render" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZTAqU3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+      <ownedOperation xmi:id="_fZTnsE3_EeihRf4zvfRhKw" name="levelLoad" visibility="public">
+        <ownedParameter xmi:id="_fZTnsU3_EeihRf4zvfRhKw" name="level" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZTnsk3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZTns03_EeihRf4zvfRhKw" name="levelSave" visibility="public">
+        <ownedParameter xmi:id="_fZTntE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZTntU3_EeihRf4zvfRhKw" name="saveLevel" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_fZTntk3_EeihRf4zvfRhKw" name="arg0" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZTnt03_EeihRf4zvfRhKw" name="loadLevel" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_fZUOwE3_EeihRf4zvfRhKw" name="arg0" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZUOwU3_EeihRf4zvfRhKw" name="getCurLevel" visibility="public">
+        <ownedParameter xmi:id="_fZUOwk3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZUOw03_EeihRf4zvfRhKw" name="setCurLevel" visibility="public">
+        <ownedParameter xmi:id="_fZUOxE3_EeihRf4zvfRhKw" name="curLevel" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZUOxU3_EeihRf4zvfRhKw" name="getIButtonEmpty" visibility="public">
+        <ownedParameter xmi:id="_fZUOxk3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZUOx03_EeihRf4zvfRhKw" name="getPlayer" visibility="public">
+        <ownedParameter xmi:id="_fZUOyE3_EeihRf4zvfRhKw" name="return" type="_fYnEIE3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZUOyU3_EeihRf4zvfRhKw" name="getIPlayer" visibility="public">
+        <ownedParameter xmi:id="_fZUOyk3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZU10E3_EeihRf4zvfRhKw" name="setIPlayer" visibility="public">
+        <ownedParameter xmi:id="_fZU10U3_EeihRf4zvfRhKw" name="player" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZU10k3_EeihRf4zvfRhKw" name="getLevel" visibility="public">
+        <ownedParameter xmi:id="_fZU1003_EeihRf4zvfRhKw" name="return" type="_fYrVkE3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZU11E3_EeihRf4zvfRhKw" name="getILevel" visibility="public">
+        <ownedParameter xmi:id="_fZU11U3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZU11k3_EeihRf4zvfRhKw" name="setLevel" visibility="public">
+        <ownedParameter xmi:id="_fZU1103_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZVc4E3_EeihRf4zvfRhKw" name="getIBackgroundOriginal" visibility="public">
+        <ownedParameter xmi:id="_fZVc4U3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZVc4k3_EeihRf4zvfRhKw" name="setIBackgroundOriginal" visibility="public">
+        <ownedParameter xmi:id="_fZVc403_EeihRf4zvfRhKw" name="iBackgroundOriginal" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZVc5E3_EeihRf4zvfRhKw" name="makeBackground" visibility="public"/>
+      <ownedOperation xmi:id="_fZVc5U3_EeihRf4zvfRhKw" name="centerCamera" visibility="public"/>
+      <ownedOperation xmi:id="_fZVc5k3_EeihRf4zvfRhKw" name="getITile" visibility="public">
+        <ownedParameter xmi:id="_fZVc503_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZVc6E3_EeihRf4zvfRhKw" name="setITile" visibility="public">
+        <ownedParameter xmi:id="_fZVc6U3_EeihRf4zvfRhKw" name="tile" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWD8E3_EeihRf4zvfRhKw" name="getLevelWidth" visibility="public">
+        <ownedParameter xmi:id="_fZWD8U3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWD8k3_EeihRf4zvfRhKw" name="setLevelWidth" visibility="public">
+        <ownedParameter xmi:id="_fZWD803_EeihRf4zvfRhKw" name="levelWidth" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWD9E3_EeihRf4zvfRhKw" name="getLevelHeight" visibility="public">
+        <ownedParameter xmi:id="_fZWD9U3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWD9k3_EeihRf4zvfRhKw" name="setLevelHeight" visibility="public">
+        <ownedParameter xmi:id="_fZWD903_EeihRf4zvfRhKw" name="levelHeight" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWrAE3_EeihRf4zvfRhKw" name="getIBackground" visibility="public">
+        <ownedParameter xmi:id="_fZWrAU3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWrAk3_EeihRf4zvfRhKw" name="setIBackground" visibility="public">
+        <ownedParameter xmi:id="_fZWrA03_EeihRf4zvfRhKw" name="background" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWrBE3_EeihRf4zvfRhKw" name="getImage" visibility="public">
+        <ownedParameter xmi:id="_fZWrBU3_EeihRf4zvfRhKw" name="return" type="_fYl2AE3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZWrBk3_EeihRf4zvfRhKw" name="getCurWidth" visibility="public">
+        <ownedParameter xmi:id="_fZWrB03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZXSEE3_EeihRf4zvfRhKw" name="getCurHeight" visibility="public">
+        <ownedParameter xmi:id="_fZXSEU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZXSEk3_EeihRf4zvfRhKw" name="setCurX" visibility="public">
+        <ownedParameter xmi:id="_fZXSE03_EeihRf4zvfRhKw" name="curX" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZXSFE3_EeihRf4zvfRhKw" name="setCurY" visibility="public">
+        <ownedParameter xmi:id="_fZXSFU3_EeihRf4zvfRhKw" name="curY" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZXSFk3_EeihRf4zvfRhKw" name="restart" visibility="public"/>
+      <ownedOperation xmi:id="_fZX5IE3_EeihRf4zvfRhKw" name="think" visibility="public">
+        <ownedParameter xmi:id="_fZX5IU3_EeihRf4zvfRhKw" name="delta" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZX5Ik3_EeihRf4zvfRhKw" name="setButtonFunction" visibility="public">
+        <ownedParameter xmi:id="_fZX5I03_EeihRf4zvfRhKw" name="function" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZX5JE3_EeihRf4zvfRhKw" name="setMouseFunction" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_fZX5JU3_EeihRf4zvfRhKw" name="arg0" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZX5Jk3_EeihRf4zvfRhKw" name="setKeyFunction" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_fZX5J03_EeihRf4zvfRhKw" name="arg0" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZYgME3_EeihRf4zvfRhKw" name="keyReleased" visibility="public">
+        <ownedParameter xmi:id="_fZYgMU3_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZYgMk3_EeihRf4zvfRhKw" name="keyPressed" visibility="public">
+        <ownedParameter xmi:id="_fZYgM03_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZYgNE3_EeihRf4zvfRhKw" name="mouseReleased" visibility="public">
+        <ownedParameter xmi:id="_fZYgNU3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZHQE3_EeihRf4zvfRhKw" name="mousePressed" visibility="public">
+        <ownedParameter xmi:id="_fZZHQU3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZHQk3_EeihRf4zvfRhKw" name="mouseDragged" visibility="public">
+        <ownedParameter xmi:id="_fZZHQ03_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZHRE3_EeihRf4zvfRhKw" name="isLevelToWidth" visibility="public">
+        <ownedParameter xmi:id="_fZZHRU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZHRk3_EeihRf4zvfRhKw" name="isLevelToHeight" visibility="public">
+        <ownedParameter xmi:id="_fZZHR03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZHSE3_EeihRf4zvfRhKw" name="getStartX" visibility="public">
+        <ownedParameter xmi:id="_fZZHSU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZuUE3_EeihRf4zvfRhKw" name="getStartY" visibility="public">
+        <ownedParameter xmi:id="_fZZuUU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZuUk3_EeihRf4zvfRhKw" name="getCurX" visibility="public">
+        <ownedParameter xmi:id="_fZZuU03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZuVE3_EeihRf4zvfRhKw" name="getCurY" visibility="public">
+        <ownedParameter xmi:id="_fZZuVU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZZuVk3_EeihRf4zvfRhKw" name="renderLevel" visibility="public">
+        <ownedParameter xmi:id="_fZaVYE3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZaVYU3_EeihRf4zvfRhKw" name="iLevel" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZaVYk3_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZaVY03_EeihRf4zvfRhKw" name="renderLevel" visibility="public">
+        <ownedParameter xmi:id="_fZaVZE3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZaVZU3_EeihRf4zvfRhKw" name="iLevel" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZaVZk3_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZaVZ03_EeihRf4zvfRhKw" name="bEditor" type="_fYiLo03_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYkA003_EeihRf4zvfRhKw" name="level">
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYrVkE3_EeihRf4zvfRhKw" name="ApoBotLevel" visibility="public">
+        <generalization xmi:id="_fYrVkU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZnJtU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+        <ownedOperation xmi:id="_fZnJtk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZnJt03_EeihRf4zvfRhKw" name="startX" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZnJuE3_EeihRf4zvfRhKw" name="startY" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZnwwE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZnwwU3_EeihRf4zvfRhKw" name="level" type="_fYr8ok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZnwwk3_EeihRf4zvfRhKw" name="startPoint" type="_fYr8o03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZnww03_EeihRf4zvfRhKw" name="directionView" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZnwxE3_EeihRf4zvfRhKw" name="menu" type="_fYr8pE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZnwxU3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZnwxk3_EeihRf4zvfRhKw" name="getCommandsMenu" visibility="public">
+          <ownedParameter xmi:id="_fZnwx03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZnwyE3_EeihRf4zvfRhKw" name="setCommandsMenu" visibility="public">
+          <ownedParameter xmi:id="_fZnwyU3_EeihRf4zvfRhKw" name="commandsMenu" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZnwyk3_EeihRf4zvfRhKw" name="getFunctionsOneMenu" visibility="public">
+          <ownedParameter xmi:id="_fZnwy03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZoX0E3_EeihRf4zvfRhKw" name="setFunctionsOneMenu" visibility="public">
+          <ownedParameter xmi:id="_fZoX0U3_EeihRf4zvfRhKw" name="functionsOneMenu" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZoX0k3_EeihRf4zvfRhKw" name="getFunctionsTwoMenu" visibility="public">
+          <ownedParameter xmi:id="_fZoX003_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZoX1E3_EeihRf4zvfRhKw" name="setFunctionsTwoMenu" visibility="public">
+          <ownedParameter xmi:id="_fZoX1U3_EeihRf4zvfRhKw" name="functionsTwoMenu" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZoX1k3_EeihRf4zvfRhKw" name="getLevel" visibility="public">
+          <ownedParameter xmi:id="_fZoX103_EeihRf4zvfRhKw" name="return" type="_fYr8ok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZo-4E3_EeihRf4zvfRhKw" name="setLevel" visibility="public">
+          <ownedParameter xmi:id="_fZo-4U3_EeihRf4zvfRhKw" name="level" type="_fYr8ok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZo-4k3_EeihRf4zvfRhKw" name="getStartPoint" visibility="public">
+          <ownedParameter xmi:id="_fZo-403_EeihRf4zvfRhKw" name="return" type="_fYr8o03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZo-5E3_EeihRf4zvfRhKw" name="setStartPoint" visibility="public">
+          <ownedParameter xmi:id="_fZo-5U3_EeihRf4zvfRhKw" name="startPoint" type="_fYr8o03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZo-5k3_EeihRf4zvfRhKw" name="getDirectionView" visibility="public">
+          <ownedParameter xmi:id="_fZo-503_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZo-6E3_EeihRf4zvfRhKw" name="setDirectionView" visibility="public">
+          <ownedParameter xmi:id="_fZo-6U3_EeihRf4zvfRhKw" name="directionView" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYr8oU3_EeihRf4zvfRhKw" name="ApoBotLevelLevel[]" isLeaf="true" isAbstract="true">
+        <eAnnotations xmi:id="_faXXoE3_EeihRf4zvfRhKw" source="Jar2UML">
+          <details xmi:id="_faXXoU3_EeihRf4zvfRhKw" key="inferred" value="true"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYr8ok3_EeihRf4zvfRhKw" name="ApoBotLevelLevel[][]" isLeaf="true" isAbstract="true">
+        <eAnnotations xmi:id="_faXXok3_EeihRf4zvfRhKw" source="Jar2UML">
+          <details xmi:id="_faXXo03_EeihRf4zvfRhKw" key="inferred" value="true"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYsjsE3_EeihRf4zvfRhKw" name="ApoBotLevelLevel" visibility="public">
+        <generalization xmi:id="_fYsjsU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZo-6k3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZo-603_EeihRf4zvfRhKw" name="ground" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZo-7E3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZo-7U3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZpl8E3_EeihRf4zvfRhKw" name="getStartGround" visibility="public">
+          <ownedParameter xmi:id="_fZpl8U3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZpl8k3_EeihRf4zvfRhKw" name="setStartGround" visibility="public">
+          <ownedParameter xmi:id="_fZpl803_EeihRf4zvfRhKw" name="startGround" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZpl9E3_EeihRf4zvfRhKw" name="getStartHeight" visibility="public">
+          <ownedParameter xmi:id="_fZpl9U3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZpl9k3_EeihRf4zvfRhKw" name="setStartHeight" visibility="public">
+          <ownedParameter xmi:id="_fZpl903_EeihRf4zvfRhKw" name="startHeight" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZpl-E3_EeihRf4zvfRhKw" name="getGround" visibility="public">
+          <ownedParameter xmi:id="_fZpl-U3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZpl-k3_EeihRf4zvfRhKw" name="setGround" visibility="public">
+          <ownedParameter xmi:id="_fZpl-03_EeihRf4zvfRhKw" name="ground" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZpl_E3_EeihRf4zvfRhKw" name="getHeight" visibility="public">
+          <ownedParameter xmi:id="_fZpl_U3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZpl_k3_EeihRf4zvfRhKw" name="setHeight" visibility="public">
+          <ownedParameter xmi:id="_fZpl_03_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYtKwE3_EeihRf4zvfRhKw" name="ApoBotLevelTest" visibility="public">
+        <generalization xmi:id="_fYtKwU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZqNAE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+        <ownedOperation xmi:id="_fZqNAU3_EeihRf4zvfRhKw" name="getLevel" visibility="public">
+          <ownedParameter xmi:id="_fZqNAk3_EeihRf4zvfRhKw" name="level" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZqNA03_EeihRf4zvfRhKw" name="return" type="_fYrVkE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZqNBE3_EeihRf4zvfRhKw" name="getMenuLevel" visibility="public">
+          <ownedParameter xmi:id="_fZqNBU3_EeihRf4zvfRhKw" name="return" type="_fYrVkE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYtKwk3_EeihRf4zvfRhKw" name="ApoBotLevelIO" visibility="public">
+        <generalization xmi:id="_fYtKxE3_EeihRf4zvfRhKw" general="_fYtKw03_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZqNBk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+        <ownedOperation xmi:id="_fZqNB03_EeihRf4zvfRhKw" name="getLevel" visibility="public">
+          <ownedParameter xmi:id="_fZqNCE3_EeihRf4zvfRhKw" name="level" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZqNCU3_EeihRf4zvfRhKw" name="return" type="_fYrVkE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZqNCk3_EeihRf4zvfRhKw" name="getMaxLevel" visibility="public">
+          <ownedParameter xmi:id="_fZqNC03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZqNDE3_EeihRf4zvfRhKw" name="getLevels" visibility="public">
+          <ownedParameter xmi:id="_fZqNDU3_EeihRf4zvfRhKw" name="return" type="_fYqugk3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZqNDk3_EeihRf4zvfRhKw" name="setLevels" visibility="public">
+          <ownedParameter xmi:id="_fZqND03_EeihRf4zvfRhKw" name="levels" type="_fYqugk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZq0EE3_EeihRf4zvfRhKw" name="addLevel" visibility="public">
+          <ownedParameter xmi:id="_fZq0EU3_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZq0Ek3_EeihRf4zvfRhKw" name="position" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZq0E03_EeihRf4zvfRhKw" name="changeLevel" visibility="public">
+          <ownedParameter xmi:id="_fZq0FE3_EeihRf4zvfRhKw" name="position" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZq0FU3_EeihRf4zvfRhKw" name="next" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZq0Fk3_EeihRf4zvfRhKw" name="removeLevel" visibility="public">
+          <ownedParameter xmi:id="_fZq0F03_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZq0GE3_EeihRf4zvfRhKw" name="removeLevel" visibility="public">
+          <ownedParameter xmi:id="_fZq0GU3_EeihRf4zvfRhKw" name="position" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZq0Gk3_EeihRf4zvfRhKw" name="readLevel" visibility="public">
+          <ownedParameter xmi:id="_fZq0G03_EeihRf4zvfRhKw" name="data" type="_fYtx0U3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZq0HE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZq0HU3_EeihRf4zvfRhKw" name="writeLevel" visibility="public">
+          <ownedParameter xmi:id="_fZq0Hk3_EeihRf4zvfRhKw" name="data" type="_fYtx0k3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZq0H03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fYl2AE3_EeihRf4zvfRhKw" name="ApoBotImage" visibility="public">
+      <generalization xmi:id="_fYl2AU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+      <ownedOperation xmi:id="_fZaVaE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+      <ownedOperation xmi:id="_fZa8cE3_EeihRf4zvfRhKw" name="getImage" visibility="public">
+        <ownedParameter xmi:id="_fZa8cU3_EeihRf4zvfRhKw" name="path" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZa8ck3_EeihRf4zvfRhKw" name="bFile" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZa8c03_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZa8dE3_EeihRf4zvfRhKw" name="drawString" visibility="public">
+        <ownedParameter xmi:id="_fZa8dU3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZa8dk3_EeihRf4zvfRhKw" name="s" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZa8d03_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZa8eE3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZa8eU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZa8ek3_EeihRf4zvfRhKw" name="getLogo" visibility="public">
+        <ownedParameter xmi:id="_fZa8e03_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZa8fE3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjgE3_EeihRf4zvfRhKw" name="iPlayer" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjgU3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZbjgk3_EeihRf4zvfRhKw" name="getIBackground" visibility="public">
+        <ownedParameter xmi:id="_fZbjg03_EeihRf4zvfRhKw" name="iBackgroundOrg" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjhE3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjhU3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjhk3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjh03_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjiE3_EeihRf4zvfRhKw" name="widthFunction" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZbjiU3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZcKkE3_EeihRf4zvfRhKw" name="getIBackground" visibility="public">
+        <ownedParameter xmi:id="_fZcKkU3_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcKkk3_EeihRf4zvfRhKw" name="iTile" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcKk03_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcKlE3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcKlU3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZcKlk3_EeihRf4zvfRhKw" name="getButtonWithImage" visibility="public">
+        <ownedParameter xmi:id="_fZcKl03_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcKmE3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcKmU3_EeihRf4zvfRhKw" name="iPic" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcKmk3_EeihRf4zvfRhKw" name="background" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxoE3_EeihRf4zvfRhKw" name="border" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxoU3_EeihRf4zvfRhKw" name="mousePressed" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxok3_EeihRf4zvfRhKw" name="mouseReleased" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxo03_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZcxpE3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+        <ownedParameter xmi:id="_fZcxpU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxpk3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxp03_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxqE3_EeihRf4zvfRhKw" name="background" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxqU3_EeihRf4zvfRhKw" name="font" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxqk3_EeihRf4zvfRhKw" name="border" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZcxq03_EeihRf4zvfRhKw" name="over" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZdYsE3_EeihRf4zvfRhKw" name="pressed" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZdYsU3_EeihRf4zvfRhKw" name="writeFont" type="_fYiysk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZdYsk3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZdYs03_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+        <ownedParameter xmi:id="_fZdYtE3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZdYtU3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZdYtk3_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZdYt03_EeihRf4zvfRhKw" name="round" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZdYuE3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZd_wE3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+        <ownedParameter xmi:id="_fZd_wU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_wk3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_w03_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_xE3_EeihRf4zvfRhKw" name="c" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_xU3_EeihRf4zvfRhKw" name="c2" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_xk3_EeihRf4zvfRhKw" name="c3" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_x03_EeihRf4zvfRhKw" name="round" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_yE3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZd_yU3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+        <ownedParameter xmi:id="_fZd_yk3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZd_y03_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem0E3_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem0U3_EeihRf4zvfRhKw" name="c" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem0k3_EeihRf4zvfRhKw" name="c2" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem003_EeihRf4zvfRhKw" name="c3" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem1E3_EeihRf4zvfRhKw" name="c4" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem1U3_EeihRf4zvfRhKw" name="c5" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem1k3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZem103_EeihRf4zvfRhKw" name="getImageCopy" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_fZem2E3_EeihRf4zvfRhKw" name="iImage" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+        <ownedParameter xmi:id="_fZem2U3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYo5UE3_EeihRf4zvfRhKw" name="game">
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYo5UU3_EeihRf4zvfRhKw" name="ApoBotTutorial" visibility="public">
+        <generalization xmi:id="_fYo5Uk3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZiROk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZiRO03_EeihRf4zvfRhKw" name="game" type="_fYpgYE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZi4QE3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZi4QU3_EeihRf4zvfRhKw" name="canGo" visibility="public">
+          <ownedParameter xmi:id="_fZi4Qk3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZi4Q03_EeihRf4zvfRhKw" name="keyPressed" visibility="public">
+          <ownedParameter xmi:id="_fZi4RE3_EeihRf4zvfRhKw" name="keyCode" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZi4RU3_EeihRf4zvfRhKw" name="nextStep" visibility="public"/>
+        <ownedOperation xmi:id="_fZi4Rk3_EeihRf4zvfRhKw" name="think" visibility="public">
+          <ownedParameter xmi:id="_fZi4R03_EeihRf4zvfRhKw" name="delta" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZi4SE3_EeihRf4zvfRhKw" name="renderMenuTutorial" visibility="public">
+          <ownedParameter xmi:id="_fZi4SU3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYo5VE3_EeihRf4zvfRhKw" name="ApoBotButton" visibility="public">
+        <generalization xmi:id="_fYo5VU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZjfUE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZjfUU3_EeihRf4zvfRhKw" name="game" type="_fYjZwU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZjfUk3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYpgYE3_EeihRf4zvfRhKw" name="ApoBotGame" visibility="public">
+        <generalization xmi:id="_fYpgYU3_EeihRf4zvfRhKw" general="_fYjZwU3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZjfU03_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZjfVE3_EeihRf4zvfRhKw" name="mouse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZjfVU3_EeihRf4zvfRhKw" name="key" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZjfVk3_EeihRf4zvfRhKw" name="wait_time_think" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZjfV03_EeihRf4zvfRhKw" name="wait_time_render" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZjfWE3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZkGYE3_EeihRf4zvfRhKw" name="loadLevel" visibility="public">
+          <ownedParameter xmi:id="_fZkGYU3_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZkGYk3_EeihRf4zvfRhKw" name="saveLevel" visibility="public">
+          <ownedParameter xmi:id="_fZkGY03_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZkGZE3_EeihRf4zvfRhKw" name="addLevelToIO" visibility="public">
+          <ownedParameter xmi:id="_fZkGZU3_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZkGZk3_EeihRf4zvfRhKw" name="setMenu" visibility="protected"/>
+        <ownedOperation xmi:id="_fZkGZ03_EeihRf4zvfRhKw" name="setGame" visibility="protected"/>
+        <ownedOperation xmi:id="_fZkGaE3_EeihRf4zvfRhKw" name="setKeyFunction" visibility="public">
+          <ownedParameter xmi:id="_fZktcE3_EeihRf4zvfRhKw" name="function" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZktcU3_EeihRf4zvfRhKw" name="setMouseFunction" visibility="public">
+          <ownedParameter xmi:id="_fZktck3_EeihRf4zvfRhKw" name="function" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZktc03_EeihRf4zvfRhKw" name="mouseWheelMoved" visibility="public">
+          <ownedParameter xmi:id="_fZktdE3_EeihRf4zvfRhKw" name="e" type="_fYqHcE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZktdU3_EeihRf4zvfRhKw" name="mouseReleased" visibility="public">
+          <ownedParameter xmi:id="_fZktdk3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZktd03_EeihRf4zvfRhKw" name="mousePressed" visibility="public">
+          <ownedParameter xmi:id="_fZkteE3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZkteU3_EeihRf4zvfRhKw" name="mouseDragged" visibility="public">
+          <ownedParameter xmi:id="_fZlUgE3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZlUgU3_EeihRf4zvfRhKw" name="reset" visibility="public"/>
+        <ownedOperation xmi:id="_fZlUgk3_EeihRf4zvfRhKw" name="restart" visibility="public"/>
+        <ownedOperation xmi:id="_fZlUg03_EeihRf4zvfRhKw" name="setLevel" visibility="public">
+          <ownedParameter xmi:id="_fZlUhE3_EeihRf4zvfRhKw" name="level" type="_fYrVkE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZlUhU3_EeihRf4zvfRhKw" name="stopGo" visibility="public"/>
+        <ownedOperation xmi:id="_fZlUhk3_EeihRf4zvfRhKw" name="think" visibility="public">
+          <ownedParameter xmi:id="_fZlUh03_EeihRf4zvfRhKw" name="delta" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZlUiE3_EeihRf4zvfRhKw" name="thinkMove" visibility="protected">
+          <ownedParameter xmi:id="_fZlUiU3_EeihRf4zvfRhKw" name="delta" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZl7kE3_EeihRf4zvfRhKw" name="render" visibility="public">
+          <ownedParameter xmi:id="_fZl7kU3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYqHcU3_EeihRf4zvfRhKw" name="ApoBotEditor" visibility="public">
+        <generalization xmi:id="_fYqugE3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZl7kk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZl7k03_EeihRf4zvfRhKw" name="game" type="_fYpgYE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZl7lE3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZl7lU3_EeihRf4zvfRhKw" name="getLevels" visibility="public">
+          <ownedParameter xmi:id="_fZl7lk3_EeihRf4zvfRhKw" name="return" type="_fYqugk3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZl7l03_EeihRf4zvfRhKw" name="loadLevel" visibility="public">
+          <ownedParameter xmi:id="_fZl7mE3_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZmioE3_EeihRf4zvfRhKw" name="saveLevel" visibility="public">
+          <ownedParameter xmi:id="_fZmioU3_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZmiok3_EeihRf4zvfRhKw" name="getLevel" visibility="public">
+          <ownedParameter xmi:id="_fZmio03_EeihRf4zvfRhKw" name="level" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZmipE3_EeihRf4zvfRhKw" name="return" type="_fYrVkE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZmipU3_EeihRf4zvfRhKw" name="getMaxLevel" visibility="public">
+          <ownedParameter xmi:id="_fZmipk3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZmip03_EeihRf4zvfRhKw" name="getCurTile" visibility="public">
+          <ownedParameter xmi:id="_fZmiqE3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZmiqU3_EeihRf4zvfRhKw" name="setCurTile" visibility="public">
+          <ownedParameter xmi:id="_fZmiqk3_EeihRf4zvfRhKw" name="curTile" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZmiq03_EeihRf4zvfRhKw" name="mouseFunction" visibility="public">
+          <ownedParameter xmi:id="_fZnJsE3_EeihRf4zvfRhKw" name="function" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZnJsU3_EeihRf4zvfRhKw" name="mouseReleased" visibility="public">
+          <ownedParameter xmi:id="_fZnJsk3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZnJs03_EeihRf4zvfRhKw" name="renderEditor" visibility="public">
+          <ownedParameter xmi:id="_fZnJtE3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fYfIUU3_EeihRf4zvfRhKw" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYfIUk3_EeihRf4zvfRhKw" name="apogames">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fYnEIU3_EeihRf4zvfRhKw" name="entity">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fYnEIk3_EeihRf4zvfRhKw" name="ApoAnimation" visibility="public">
+          <generalization xmi:id="_fY8bUE3_EeihRf4zvfRhKw" general="_fYoSQU3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faCnhE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faCnhU3_EeihRf4zvfRhKw" name="iAnimation" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCnhk3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCnh03_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCniE3_EeihRf4zvfRhKw" name="tiles" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCniU3_EeihRf4zvfRhKw" name="time" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faCnik3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faCni03_EeihRf4zvfRhKw" name="iAnimation" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faDOkE3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faDOkU3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faDOkk3_EeihRf4zvfRhKw" name="width" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faDOk03_EeihRf4zvfRhKw" name="height" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faDOlE3_EeihRf4zvfRhKw" name="tiles" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faDOlU3_EeihRf4zvfRhKw" name="time" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faDOlk3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+          <ownedOperation xmi:id="_faDOl03_EeihRf4zvfRhKw" name="getTiles" visibility="public">
+            <ownedParameter xmi:id="_faDOmE3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faDOmU3_EeihRf4zvfRhKw" name="setTiles" visibility="public">
+            <ownedParameter xmi:id="_faDOmk3_EeihRf4zvfRhKw" name="tiles" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faDOm03_EeihRf4zvfRhKw" name="getFrame" visibility="public">
+            <ownedParameter xmi:id="_faDOnE3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faDOnU3_EeihRf4zvfRhKw" name="setFrame" visibility="public">
+            <ownedParameter xmi:id="_faDOnk3_EeihRf4zvfRhKw" name="frame" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faD1oE3_EeihRf4zvfRhKw" name="getCurTime" visibility="public">
+            <ownedParameter xmi:id="_faD1oU3_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faD1ok3_EeihRf4zvfRhKw" name="setCurTime" visibility="public">
+            <ownedParameter xmi:id="_faD1o03_EeihRf4zvfRhKw" name="curTime" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faD1pE3_EeihRf4zvfRhKw" name="getTime" visibility="public">
+            <ownedParameter xmi:id="_faD1pU3_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faD1pk3_EeihRf4zvfRhKw" name="setTime" visibility="public">
+            <ownedParameter xmi:id="_faD1p03_EeihRf4zvfRhKw" name="time" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faD1qE3_EeihRf4zvfRhKw" name="think" visibility="public">
+            <ownedParameter xmi:id="_faD1qU3_EeihRf4zvfRhKw" name="time" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faD1qk3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faD1q03_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faEcsE3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faEcsU3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faEcsk3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faEcs03_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fYoSQU3_EeihRf4zvfRhKw" name="ApoEntity" visibility="public">
+          <generalization xmi:id="_fY5YAE3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_fZ8g5k3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_fZ8g503_EeihRf4zvfRhKw" name="iBackground" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ8g6E3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ8g6U3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ8g6k3_EeihRf4zvfRhKw" name="width" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ8g603_EeihRf4zvfRhKw" name="height" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ8g7E3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+          <ownedOperation xmi:id="_fZ8g7U3_EeihRf4zvfRhKw" name="getStartX" visibility="public">
+            <ownedParameter xmi:id="_fZ8g7k3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ8g703_EeihRf4zvfRhKw" name="setStartX" visibility="public">
+            <ownedParameter xmi:id="_fZ9H8E3_EeihRf4zvfRhKw" name="startX" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H8U3_EeihRf4zvfRhKw" name="getStartY" visibility="public">
+            <ownedParameter xmi:id="_fZ9H8k3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H803_EeihRf4zvfRhKw" name="setStartY" visibility="public">
+            <ownedParameter xmi:id="_fZ9H9E3_EeihRf4zvfRhKw" name="startY" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H9U3_EeihRf4zvfRhKw" name="isBVisible" visibility="public">
+            <ownedParameter xmi:id="_fZ9H9k3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H903_EeihRf4zvfRhKw" name="setBVisible" visibility="public">
+            <ownedParameter xmi:id="_fZ9H-E3_EeihRf4zvfRhKw" name="bVisible" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H-U3_EeihRf4zvfRhKw" name="isBSelect" visibility="public">
+            <ownedParameter xmi:id="_fZ9H-k3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H-03_EeihRf4zvfRhKw" name="setBSelect" visibility="public">
+            <ownedParameter xmi:id="_fZ9H_E3_EeihRf4zvfRhKw" name="bSelect" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H_U3_EeihRf4zvfRhKw" name="isBClose" visibility="public">
+            <ownedParameter xmi:id="_fZ9H_k3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9H_03_EeihRf4zvfRhKw" name="setBClose" visibility="public">
+            <ownedParameter xmi:id="_fZ9IAE3_EeihRf4zvfRhKw" name="bClose" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9IAU3_EeihRf4zvfRhKw" name="isBUse" visibility="public">
+            <ownedParameter xmi:id="_fZ9IAk3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vAE3_EeihRf4zvfRhKw" name="setBUse" visibility="public">
+            <ownedParameter xmi:id="_fZ9vAU3_EeihRf4zvfRhKw" name="bUse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vAk3_EeihRf4zvfRhKw" name="getVecY" visibility="public">
+            <ownedParameter xmi:id="_fZ9vA03_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vBE3_EeihRf4zvfRhKw" name="setVecY" visibility="public">
+            <ownedParameter xmi:id="_fZ9vBU3_EeihRf4zvfRhKw" name="vecY" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vBk3_EeihRf4zvfRhKw" name="getVecX" visibility="public">
+            <ownedParameter xmi:id="_fZ9vB03_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vCE3_EeihRf4zvfRhKw" name="setVecX" visibility="public">
+            <ownedParameter xmi:id="_fZ9vCU3_EeihRf4zvfRhKw" name="vecX" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vCk3_EeihRf4zvfRhKw" name="getIBackground" visibility="public">
+            <ownedParameter xmi:id="_fZ9vC03_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vDE3_EeihRf4zvfRhKw" name="setIBackground" visibility="public">
+            <ownedParameter xmi:id="_fZ9vDU3_EeihRf4zvfRhKw" name="background" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vDk3_EeihRf4zvfRhKw" name="getWidth" visibility="public">
+            <ownedParameter xmi:id="_fZ9vD03_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ9vEE3_EeihRf4zvfRhKw" name="setWidth" visibility="public">
+            <ownedParameter xmi:id="_fZ-WEE3_EeihRf4zvfRhKw" name="width" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-WEU3_EeihRf4zvfRhKw" name="getHeight" visibility="public">
+            <ownedParameter xmi:id="_fZ-WEk3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-WE03_EeihRf4zvfRhKw" name="setHeight" visibility="public">
+            <ownedParameter xmi:id="_fZ-WFE3_EeihRf4zvfRhKw" name="height" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-WFU3_EeihRf4zvfRhKw" name="getX" visibility="public">
+            <ownedParameter xmi:id="_fZ-WFk3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-WF03_EeihRf4zvfRhKw" name="getXMiddle" visibility="public">
+            <ownedParameter xmi:id="_fZ-WGE3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-WGU3_EeihRf4zvfRhKw" name="setX" visibility="public">
+            <ownedParameter xmi:id="_fZ-WGk3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-WG03_EeihRf4zvfRhKw" name="getY" visibility="public">
+            <ownedParameter xmi:id="_fZ-9IE3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-9IU3_EeihRf4zvfRhKw" name="setY" visibility="public">
+            <ownedParameter xmi:id="_fZ-9Ik3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-9I03_EeihRf4zvfRhKw" name="intersects" visibility="public">
+            <ownedParameter xmi:id="_fZ-9JE3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ-9JU3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ-9Jk3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ-9J03_EeihRf4zvfRhKw" name="intersects" visibility="public">
+            <ownedParameter xmi:id="_fZ-9KE3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ-9KU3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ-9Kk3_EeihRf4zvfRhKw" name="width" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ-9K03_EeihRf4zvfRhKw" name="height" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ-9LE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ_kME3_EeihRf4zvfRhKw" name="intersects" visibility="public">
+            <ownedParameter xmi:id="_fZ_kMU3_EeihRf4zvfRhKw" name="entity" type="_fYoSQU3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ_kMk3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ_kM03_EeihRf4zvfRhKw" name="contains" visibility="public">
+            <ownedParameter xmi:id="_fZ_kNE3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ_kNU3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ_kNk3_EeihRf4zvfRhKw" name="width" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ_kN03_EeihRf4zvfRhKw" name="height" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_fZ_kOE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_fZ_kOU3_EeihRf4zvfRhKw" name="contains" visibility="public">
+            <ownedParameter xmi:id="_fZ_kOk3_EeihRf4zvfRhKw" name="entity" type="_fYoSQU3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faALQE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faALQU3_EeihRf4zvfRhKw" name="getRec" visibility="public">
+            <ownedParameter xmi:id="_faALQk3_EeihRf4zvfRhKw" name="return" type="_fY7NMU3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faALQ03_EeihRf4zvfRhKw" name="checkOpaqueColorCollisions" visibility="public">
+            <ownedParameter xmi:id="_faALRE3_EeihRf4zvfRhKw" name="entity" type="_fYoSQU3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faALRU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faALRk3_EeihRf4zvfRhKw" name="think" visibility="public">
+            <ownedParameter xmi:id="_faALR03_EeihRf4zvfRhKw" name="delta" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faALSE3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faALSU3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faAyUE3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faAyUU3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faAyUk3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faAyU03_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faAyVE3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faAyVU3_EeihRf4zvfRhKw" name="g" type="_fYyqUE3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fYyDRE3_EeihRf4zvfRhKw" name="ApoButton[]" isLeaf="true" isAbstract="true">
+          <eAnnotations xmi:id="_faXXpE3_EeihRf4zvfRhKw" source="Jar2UML">
+            <details xmi:id="_faXXpU3_EeihRf4zvfRhKw" key="inferred" value="true"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY70QE3_EeihRf4zvfRhKw" name="ApoDragObject" visibility="public">
+          <generalization xmi:id="_fY70Qk3_EeihRf4zvfRhKw" general="_fY70QU3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faAyVk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faAyV03_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faAyWE3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faAyWU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faAyWk3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faBZYE3_EeihRf4zvfRhKw" name="getPressed" visibility="public">
+            <ownedParameter xmi:id="_faBZYU3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faBZYk3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faBZY03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faBZZE3_EeihRf4zvfRhKw" name="getReleased" visibility="public">
+            <ownedParameter xmi:id="_faBZZU3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faBZZk3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faBZZ03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faBZaE3_EeihRf4zvfRhKw" name="getIn" visibility="public">
+            <ownedParameter xmi:id="_faBZaU3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faBZak3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faBZa03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faBZbE3_EeihRf4zvfRhKw" name="setDragX" visibility="public">
+            <ownedParameter xmi:id="_faCAcE3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faCAcU3_EeihRf4zvfRhKw" name="setDragY" visibility="public">
+            <ownedParameter xmi:id="_faCAck3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faCAc03_EeihRf4zvfRhKw" name="getNewX" visibility="public">
+            <ownedParameter xmi:id="_faCAdE3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCAdU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faCAdk3_EeihRf4zvfRhKw" name="getNewY" visibility="public">
+            <ownedParameter xmi:id="_faCAd03_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCAeE3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faCAeU3_EeihRf4zvfRhKw" name="getDiffX" visibility="public">
+            <ownedParameter xmi:id="_faCAek3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faCAe03_EeihRf4zvfRhKw" name="getDiffY" visibility="public">
+            <ownedParameter xmi:id="_faCAfE3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faCngE3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faCngU3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCngk3_EeihRf4zvfRhKw" name="changeX" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faCng03_EeihRf4zvfRhKw" name="changeY" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY70QU3_EeihRf4zvfRhKw" name="ApoButton" visibility="public">
+          <generalization xmi:id="_fY9CYE3_EeihRf4zvfRhKw" general="_fYoSQU3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faEctE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faEctU3_EeihRf4zvfRhKw" name="iBackground" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faEctk3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faEct03_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faEcuE3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faEcuU3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faEcuk3_EeihRf4zvfRhKw" name="function" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faEcu03_EeihRf4zvfRhKw" name="isBWait" visibility="public">
+            <ownedParameter xmi:id="_faEcvE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDwE3_EeihRf4zvfRhKw" name="setBWait" visibility="public">
+            <ownedParameter xmi:id="_faFDwU3_EeihRf4zvfRhKw" name="bWait" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDwk3_EeihRf4zvfRhKw" name="getWAIT_DELAY" visibility="public">
+            <ownedParameter xmi:id="_faFDw03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDxE3_EeihRf4zvfRhKw" name="setWAIT_DELAY" visibility="public">
+            <ownedParameter xmi:id="_faFDxU3_EeihRf4zvfRhKw" name="wait_delay" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDxk3_EeihRf4zvfRhKw" name="isBOver" visibility="public">
+            <ownedParameter xmi:id="_faFDx03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDyE3_EeihRf4zvfRhKw" name="setBOver" visibility="public">
+            <ownedParameter xmi:id="_faFDyU3_EeihRf4zvfRhKw" name="bOver" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDyk3_EeihRf4zvfRhKw" name="isBPressed" visibility="public">
+            <ownedParameter xmi:id="_faFDy03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDzE3_EeihRf4zvfRhKw" name="setBPressed" visibility="public">
+            <ownedParameter xmi:id="_faFDzU3_EeihRf4zvfRhKw" name="bPressed" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFDzk3_EeihRf4zvfRhKw" name="getFunction" visibility="public">
+            <ownedParameter xmi:id="_faFDz03_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFq0E3_EeihRf4zvfRhKw" name="setFunction" visibility="public">
+            <ownedParameter xmi:id="_faFq0U3_EeihRf4zvfRhKw" name="function" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFq0k3_EeihRf4zvfRhKw" name="getMove" visibility="public">
+            <ownedParameter xmi:id="_faFq003_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faFq1E3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faFq1U3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFq1k3_EeihRf4zvfRhKw" name="getPressed" visibility="public">
+            <ownedParameter xmi:id="_faFq103_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faFq2E3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faFq2U3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faFq2k3_EeihRf4zvfRhKw" name="getReleased" visibility="public">
+            <ownedParameter xmi:id="_faGR4E3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faGR4U3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faGR4k3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faGR403_EeihRf4zvfRhKw" name="think" visibility="public">
+            <ownedParameter xmi:id="_faGR5E3_EeihRf4zvfRhKw" name="delay" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faGR5U3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faGR5k3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faGR503_EeihRf4zvfRhKw" name="changeX" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faGR6E3_EeihRf4zvfRhKw" name="changeY" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY9pcE3_EeihRf4zvfRhKw" name="ApoButtonText" visibility="public">
+          <generalization xmi:id="_fY9pcU3_EeihRf4zvfRhKw" general="_fY70QU3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faGR6U3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faGR6k3_EeihRf4zvfRhKw" name="iBackground" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faGR603_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faGR7E3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG48E3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG48U3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG48k3_EeihRf4zvfRhKw" name="function" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG4803_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faG49E3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faG49U3_EeihRf4zvfRhKw" name="iBackground" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG49k3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG4903_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG4-E3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG4-U3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG4-k3_EeihRf4zvfRhKw" name="function" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faG4-03_EeihRf4zvfRhKw" name="value" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faG4_E3_EeihRf4zvfRhKw" name="getColorPressed" visibility="public">
+            <ownedParameter xmi:id="_faG4_U3_EeihRf4zvfRhKw" name="return" type="_fYmdEE3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faG4_k3_EeihRf4zvfRhKw" name="setColorPressed" visibility="public">
+            <ownedParameter xmi:id="_faG4_03_EeihRf4zvfRhKw" name="colorPressed" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faHgAE3_EeihRf4zvfRhKw" name="getColorReleased" visibility="public">
+            <ownedParameter xmi:id="_faHgAU3_EeihRf4zvfRhKw" name="return" type="_fYmdEE3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faHgAk3_EeihRf4zvfRhKw" name="setColorReleased" visibility="public">
+            <ownedParameter xmi:id="_faHgA03_EeihRf4zvfRhKw" name="colorReleased" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faHgBE3_EeihRf4zvfRhKw" name="setFontSize" visibility="public">
+            <ownedParameter xmi:id="_faHgBU3_EeihRf4zvfRhKw" name="size" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faHgBk3_EeihRf4zvfRhKw" name="getValue" visibility="public">
+            <ownedParameter xmi:id="_faHgB03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faHgCE3_EeihRf4zvfRhKw" name="render" visibility="public">
+            <ownedParameter xmi:id="_faHgCU3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faHgCk3_EeihRf4zvfRhKw" name="changeX" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faHgC03_EeihRf4zvfRhKw" name="changeY" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYfIU03_EeihRf4zvfRhKw" name="ApoMainBufferedStrategy" visibility="public" isAbstract="true">
+        <generalization xmi:id="_fYu_8U3_EeihRf4zvfRhKw" general="_fYu_8E3_EeihRf4zvfRhKw"/>
+        <ownedAttribute xmi:id="_fZspQk3_EeihRf4zvfRhKw" name="main" visibility="public" isStatic="true" type="_fYfIU03_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZspQ03_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZspRE3_EeihRf4zvfRhKw" name="splashUrl" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZspRU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZspRk3_EeihRf4zvfRhKw" name="splashUrl" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZspR03_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZspSE3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZtQUE3_EeihRf4zvfRhKw" name="setComponent" visibility="public">
+          <ownedParameter xmi:id="_fZtQUU3_EeihRf4zvfRhKw" name="component" type="_fYjZwk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZtQUk3_EeihRf4zvfRhKw" name="init" visibility="public" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYiytE3_EeihRf4zvfRhKw" name="ApoAppletBufferedStrategy" visibility="public">
+        <generalization xmi:id="_fYwOEU3_EeihRf4zvfRhKw" general="_fYvnA03_EeihRf4zvfRhKw"/>
+        <ownedAttribute xmi:id="_fZtQW03_EeihRf4zvfRhKw" name="main" visibility="public" isStatic="true" type="_fYiytE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZtQXE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZtQXU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZtQXk3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZt3YE3_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZt3YU3_EeihRf4zvfRhKw" name="destroy" visibility="public"/>
+        <ownedOperation xmi:id="_fZt3Yk3_EeihRf4zvfRhKw" name="setComponent" visibility="public">
+          <ownedParameter xmi:id="_fZt3Y03_EeihRf4zvfRhKw" name="component" type="_fYjZwk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYjZwk3_EeihRf4zvfRhKw" name="ApoComponentBufferedStrategy" visibility="public" isAbstract="true">
+        <generalization xmi:id="_fY4J403_EeihRf4zvfRhKw" general="_fY3i0E3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fY3i0U3_EeihRf4zvfRhKw" client="_fYjZwk3_EeihRf4zvfRhKw" supplier="_fYw1IE3_EeihRf4zvfRhKw" contract="_fYw1IE3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fY3i0k3_EeihRf4zvfRhKw" client="_fYjZwk3_EeihRf4zvfRhKw" supplier="_fYw1IU3_EeihRf4zvfRhKw" contract="_fYw1IU3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fY3i003_EeihRf4zvfRhKw" client="_fYjZwk3_EeihRf4zvfRhKw" supplier="_fYw1Ik3_EeihRf4zvfRhKw" contract="_fYw1Ik3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fY4J4E3_EeihRf4zvfRhKw" client="_fYjZwk3_EeihRf4zvfRhKw" supplier="_fYw1I03_EeihRf4zvfRhKw" contract="_fYw1I03_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fY4J4U3_EeihRf4zvfRhKw" client="_fYjZwk3_EeihRf4zvfRhKw" supplier="_fYw1JE3_EeihRf4zvfRhKw" contract="_fYw1JE3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fY4J4k3_EeihRf4zvfRhKw" client="_fYjZwk3_EeihRf4zvfRhKw" supplier="_fYxcME3_EeihRf4zvfRhKw" contract="_fYxcME3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZ4PcU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ4Pck3_EeihRf4zvfRhKw" name="bMouse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ4Pc03_EeihRf4zvfRhKw" name="bKey" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ4PdE3_EeihRf4zvfRhKw" name="wait_time" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ4PdU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ4Pdk3_EeihRf4zvfRhKw" name="bMouse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ4Pd03_EeihRf4zvfRhKw" name="bKey" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ4PeE3_EeihRf4zvfRhKw" name="wait_time_think" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ4PeU3_EeihRf4zvfRhKw" name="wait_time_render" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ42gE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ42gU3_EeihRf4zvfRhKw" name="bMouse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ42gk3_EeihRf4zvfRhKw" name="bKey" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ42g03_EeihRf4zvfRhKw" name="wait_time_think" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ42hE3_EeihRf4zvfRhKw" name="wait_time_render" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ42hU3_EeihRf4zvfRhKw" name="bTimer" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ42hk3_EeihRf4zvfRhKw" name="getWAIT_TIME_RENDER" visibility="public">
+          <ownedParameter xmi:id="_fZ42h03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ42iE3_EeihRf4zvfRhKw" name="setWAIT_TIME_RENDER" visibility="public">
+          <ownedParameter xmi:id="_fZ42iU3_EeihRf4zvfRhKw" name="wait_time_render" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ42ik3_EeihRf4zvfRhKw" name="getButtons" visibility="public">
+          <ownedParameter xmi:id="_fZ42i03_EeihRf4zvfRhKw" name="return" type="_fYyDRE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ42jE3_EeihRf4zvfRhKw" name="setButtons" visibility="public">
+          <ownedParameter xmi:id="_fZ42jU3_EeihRf4zvfRhKw" name="buttons" type="_fYyDRE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ42jk3_EeihRf4zvfRhKw" name="init" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_fZ42j03_EeihRf4zvfRhKw" name="keyTyped" visibility="public">
+          <ownedParameter xmi:id="_fZ5dkE3_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ5dkU3_EeihRf4zvfRhKw" name="keyPressed" visibility="public">
+          <ownedParameter xmi:id="_fZ5dkk3_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ5dk03_EeihRf4zvfRhKw" name="keyReleased" visibility="public">
+          <ownedParameter xmi:id="_fZ5dlE3_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ5dlU3_EeihRf4zvfRhKw" name="setButtonFunction" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZ5dlk3_EeihRf4zvfRhKw" name="arg0" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ5dl03_EeihRf4zvfRhKw" name="think" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZ5dmE3_EeihRf4zvfRhKw" name="arg0" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ5dmU3_EeihRf4zvfRhKw" name="render" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZ5dmk3_EeihRf4zvfRhKw" name="arg0" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ5dm03_EeihRf4zvfRhKw" name="render" visibility="public"/>
+        <ownedOperation xmi:id="_fZ6EoE3_EeihRf4zvfRhKw" name="setRestartThreadValues" visibility="public">
+          <ownedParameter xmi:id="_fZ6EoU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6Eok3_EeihRf4zvfRhKw" name="renderFPS" visibility="public">
+          <ownedParameter xmi:id="_fZ6Eo03_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ6EpE3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ6EpU3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6Epk3_EeihRf4zvfRhKw" name="renderButtons" visibility="public">
+          <ownedParameter xmi:id="_fZ6Ep03_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6EqE3_EeihRf4zvfRhKw" name="start" visibility="public"/>
+        <ownedOperation xmi:id="_fZ6EqU3_EeihRf4zvfRhKw" name="stop" visibility="public"/>
+        <ownedOperation xmi:id="_fZ6Eqk3_EeihRf4zvfRhKw" name="getFPS" visibility="public">
+          <ownedParameter xmi:id="_fZ6Eq03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6ErE3_EeihRf4zvfRhKw" name="isBThink" visibility="public">
+          <ownedParameter xmi:id="_fZ6rsE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6rsU3_EeihRf4zvfRhKw" name="setBThink" visibility="public">
+          <ownedParameter xmi:id="_fZ6rsk3_EeihRf4zvfRhKw" name="bThink" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6rs03_EeihRf4zvfRhKw" name="isBRepaint" visibility="public">
+          <ownedParameter xmi:id="_fZ6rtE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6rtU3_EeihRf4zvfRhKw" name="setBRepaint" visibility="public">
+          <ownedParameter xmi:id="_fZ6rtk3_EeihRf4zvfRhKw" name="bRepaint" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6rt03_EeihRf4zvfRhKw" name="getBDirections" visibility="public">
+          <ownedParameter xmi:id="_fZ6ruE3_EeihRf4zvfRhKw" name="return" type="_fYiysE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6ruU3_EeihRf4zvfRhKw" name="setBDirections" visibility="public">
+          <ownedParameter xmi:id="_fZ6ruk3_EeihRf4zvfRhKw" name="bDirections" type="_fYiysE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6ru03_EeihRf4zvfRhKw" name="isBBack" visibility="public">
+          <ownedParameter xmi:id="_fZ6rvE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6rvU3_EeihRf4zvfRhKw" name="setBBack" visibility="public">
+          <ownedParameter xmi:id="_fZ6rvk3_EeihRf4zvfRhKw" name="bBack" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ6rv03_EeihRf4zvfRhKw" name="isBLoose" visibility="public">
+          <ownedParameter xmi:id="_fZ6rwE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ7SwE3_EeihRf4zvfRhKw" name="setBLoose" visibility="public">
+          <ownedParameter xmi:id="_fZ7SwU3_EeihRf4zvfRhKw" name="bLoose" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ7Swk3_EeihRf4zvfRhKw" name="isBWin" visibility="public">
+          <ownedParameter xmi:id="_fZ7Sw03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ7SxE3_EeihRf4zvfRhKw" name="setBWin" visibility="public">
+          <ownedParameter xmi:id="_fZ7SxU3_EeihRf4zvfRhKw" name="bWin" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ7Sxk3_EeihRf4zvfRhKw" name="isBHelp" visibility="public">
+          <ownedParameter xmi:id="_fZ7Sx03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ7SyE3_EeihRf4zvfRhKw" name="setBHelp" visibility="public">
+          <ownedParameter xmi:id="_fZ7SyU3_EeihRf4zvfRhKw" name="bHelp" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ7Syk3_EeihRf4zvfRhKw" name="mouseMoved" visibility="public">
+          <ownedParameter xmi:id="_fZ7Sy03_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ7SzE3_EeihRf4zvfRhKw" name="mousePressed" visibility="public">
+          <ownedParameter xmi:id="_fZ7SzU3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ750E3_EeihRf4zvfRhKw" name="mouseReleased" visibility="public">
+          <ownedParameter xmi:id="_fZ750U3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ750k3_EeihRf4zvfRhKw" name="mouseDragged" visibility="public">
+          <ownedParameter xmi:id="_fZ75003_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ751E3_EeihRf4zvfRhKw" name="mouseClicked" visibility="public">
+          <ownedParameter xmi:id="_fZ751U3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ751k3_EeihRf4zvfRhKw" name="mouseEntered" visibility="public">
+          <ownedParameter xmi:id="_fZ75103_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ752E3_EeihRf4zvfRhKw" name="mouseExited" visibility="public">
+          <ownedParameter xmi:id="_fZ752U3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ8g4E3_EeihRf4zvfRhKw" name="mouseWheelMoved" visibility="public">
+          <ownedParameter xmi:id="_fZ8g4U3_EeihRf4zvfRhKw" name="e" type="_fYqHcE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ8g4k3_EeihRf4zvfRhKw" name="focusGained" visibility="public">
+          <ownedParameter xmi:id="_fZ8g403_EeihRf4zvfRhKw" name="e" type="_fYzRYE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ8g5E3_EeihRf4zvfRhKw" name="focusLost" visibility="public">
+          <ownedParameter xmi:id="_fZ8g5U3_EeihRf4zvfRhKw" name="e" type="_fYzRYE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYtKw03_EeihRf4zvfRhKw" name="ApoIO" visibility="public" isAbstract="true">
+        <generalization xmi:id="_fY1Gkk3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZ0lEk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+        <ownedOperation xmi:id="_fZ0lE03_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ0lFE3_EeihRf4zvfRhKw" name="levelName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ0lFU3_EeihRf4zvfRhKw" name="fileEnding" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ0lFk3_EeihRf4zvfRhKw" name="getLevelName" visibility="public">
+          <ownedParameter xmi:id="_fZ0lF03_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ0lGE3_EeihRf4zvfRhKw" name="setLevelName" visibility="public">
+          <ownedParameter xmi:id="_fZ0lGU3_EeihRf4zvfRhKw" name="levelName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ0lGk3_EeihRf4zvfRhKw" name="getFileEnding" visibility="public">
+          <ownedParameter xmi:id="_fZ0lG03_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MIE3_EeihRf4zvfRhKw" name="setFileEnding" visibility="public">
+          <ownedParameter xmi:id="_fZ1MIU3_EeihRf4zvfRhKw" name="fileEnding" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MIk3_EeihRf4zvfRhKw" name="getCurrentLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1MI03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MJE3_EeihRf4zvfRhKw" name="setCurrentLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1MJU3_EeihRf4zvfRhKw" name="currentLevel" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MJk3_EeihRf4zvfRhKw" name="getMaxLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1MJ03_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MKE3_EeihRf4zvfRhKw" name="setMaxLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1MKU3_EeihRf4zvfRhKw" name="maxLevel" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MKk3_EeihRf4zvfRhKw" name="hasNextLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1MK03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MLE3_EeihRf4zvfRhKw" name="hasNextLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1MLU3_EeihRf4zvfRhKw" name="bURL" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1MLk3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1ML03_EeihRf4zvfRhKw" name="writeLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1MME3_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1MMU3_EeihRf4zvfRhKw" name="writeLevel" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZ1MMk3_EeihRf4zvfRhKw" name="arg0" type="_fYtx0k3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zME3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1zMU3_EeihRf4zvfRhKw" name="readLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1zMk3_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zM03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1zNE3_EeihRf4zvfRhKw" name="readLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1zNU3_EeihRf4zvfRhKw" name="bURL" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zNk3_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zN03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1zOE3_EeihRf4zvfRhKw" name="readLevel" visibility="public">
+          <ownedParameter xmi:id="_fZ1zOU3_EeihRf4zvfRhKw" name="bURL" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zOk3_EeihRf4zvfRhKw" name="fileName" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zO03_EeihRf4zvfRhKw" name="bAll" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zPE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ1zPU3_EeihRf4zvfRhKw" name="readLevel" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZ1zPk3_EeihRf4zvfRhKw" name="arg0" type="_fYtx0U3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ1zP03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYtx003_EeihRf4zvfRhKw" name="ApoNewThread" visibility="public">
+        <generalization xmi:id="_fYuY4k3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fYuY4U3_EeihRf4zvfRhKw" client="_fYtx003_EeihRf4zvfRhKw" supplier="_fYuY4E3_EeihRf4zvfRhKw" contract="_fYuY4E3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZq0IE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZrbIE3_EeihRf4zvfRhKw" name="game" type="_fYw1IE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZrbIU3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZrbIk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZrbI03_EeihRf4zvfRhKw" name="game" type="_fYw1IE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZrbJE3_EeihRf4zvfRhKw" name="waitThink" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZrbJU3_EeihRf4zvfRhKw" name="waitRender" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZrbJk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZrbJ03_EeihRf4zvfRhKw" name="game" type="_fYw1IE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZrbKE3_EeihRf4zvfRhKw" name="waitThink" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZrbKU3_EeihRf4zvfRhKw" name="waitRender" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZrbKk3_EeihRf4zvfRhKw" name="bThink" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZrbK03_EeihRf4zvfRhKw" name="bRender" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZrbLE3_EeihRf4zvfRhKw" name="isBThink" visibility="public">
+          <ownedParameter xmi:id="_fZrbLU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZrbLk3_EeihRf4zvfRhKw" name="setBThink" visibility="public">
+          <ownedParameter xmi:id="_fZrbL03_EeihRf4zvfRhKw" name="bThink" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZrbME3_EeihRf4zvfRhKw" name="isBRender" visibility="public">
+          <ownedParameter xmi:id="_fZrbMU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZrbMk3_EeihRf4zvfRhKw" name="setBRender" visibility="public">
+          <ownedParameter xmi:id="_fZrbM03_EeihRf4zvfRhKw" name="bRender" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCME3_EeihRf4zvfRhKw" name="getFps" visibility="public">
+          <ownedParameter xmi:id="_fZsCMU3_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCMk3_EeihRf4zvfRhKw" name="getWait" visibility="public">
+          <ownedParameter xmi:id="_fZsCM03_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCNE3_EeihRf4zvfRhKw" name="setWait" visibility="public">
+          <ownedParameter xmi:id="_fZsCNU3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCNk3_EeihRf4zvfRhKw" name="getWaitRender" visibility="public">
+          <ownedParameter xmi:id="_fZsCN03_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCOE3_EeihRf4zvfRhKw" name="setWaitRender" visibility="public">
+          <ownedParameter xmi:id="_fZsCOU3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCOk3_EeihRf4zvfRhKw" name="start" visibility="public"/>
+        <ownedOperation xmi:id="_fZsCO03_EeihRf4zvfRhKw" name="stop" visibility="public"/>
+        <ownedOperation xmi:id="_fZsCPE3_EeihRf4zvfRhKw" name="isBRunning" visibility="public">
+          <ownedParameter xmi:id="_fZsCPU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCPk3_EeihRf4zvfRhKw" name="setBRunning" visibility="public">
+          <ownedParameter xmi:id="_fZsCP03_EeihRf4zvfRhKw" name="bRunning" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZsCQE3_EeihRf4zvfRhKw" name="run" visibility="public"/>
+        <ownedOperation xmi:id="_fZspQE3_EeihRf4zvfRhKw" name="setRestart" visibility="public">
+          <ownedParameter xmi:id="_fZspQU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYvnAE3_EeihRf4zvfRhKw" name="ApoApplet" visibility="public" isAbstract="true">
+        <generalization xmi:id="_fYvnBE3_EeihRf4zvfRhKw" general="_fYvnA03_EeihRf4zvfRhKw"/>
+        <ownedAttribute xmi:id="_fZtQU03_EeihRf4zvfRhKw" name="main" visibility="public" isStatic="true" type="_fYvnAE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZtQVE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZtQVU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZtQVk3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZtQV03_EeihRf4zvfRhKw" name="init" visibility="public"/>
+        <ownedOperation xmi:id="_fZtQWE3_EeihRf4zvfRhKw" name="destroy" visibility="public"/>
+        <ownedOperation xmi:id="_fZtQWU3_EeihRf4zvfRhKw" name="setComponent" visibility="public">
+          <ownedParameter xmi:id="_fZtQWk3_EeihRf4zvfRhKw" name="component" type="_fYwOEk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYwOEk3_EeihRf4zvfRhKw" name="ApoComponent" visibility="public" isAbstract="true">
+        <generalization xmi:id="_fYyDQk3_EeihRf4zvfRhKw" general="_fYxcMU3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fYxcMk3_EeihRf4zvfRhKw" client="_fYwOEk3_EeihRf4zvfRhKw" supplier="_fYw1IE3_EeihRf4zvfRhKw" contract="_fYw1IE3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fYxcM03_EeihRf4zvfRhKw" client="_fYwOEk3_EeihRf4zvfRhKw" supplier="_fYw1IU3_EeihRf4zvfRhKw" contract="_fYw1IU3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fYxcNE3_EeihRf4zvfRhKw" client="_fYwOEk3_EeihRf4zvfRhKw" supplier="_fYw1Ik3_EeihRf4zvfRhKw" contract="_fYw1Ik3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fYxcNU3_EeihRf4zvfRhKw" client="_fYwOEk3_EeihRf4zvfRhKw" supplier="_fYw1I03_EeihRf4zvfRhKw" contract="_fYw1I03_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fYyDQE3_EeihRf4zvfRhKw" client="_fYwOEk3_EeihRf4zvfRhKw" supplier="_fYw1JE3_EeihRf4zvfRhKw" contract="_fYw1JE3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fYyDQU3_EeihRf4zvfRhKw" client="_fYwOEk3_EeihRf4zvfRhKw" supplier="_fYxcME3_EeihRf4zvfRhKw" contract="_fYxcME3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZt3ZE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZt3ZU3_EeihRf4zvfRhKw" name="bMouse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZt3Zk3_EeihRf4zvfRhKw" name="bKey" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZt3Z03_EeihRf4zvfRhKw" name="wait_time" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZt3aE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZt3aU3_EeihRf4zvfRhKw" name="bMouse" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZt3ak3_EeihRf4zvfRhKw" name="bKey" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZt3a03_EeihRf4zvfRhKw" name="wait_time" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZt3bE3_EeihRf4zvfRhKw" name="timerThread" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZt3bU3_EeihRf4zvfRhKw" name="getButtons" visibility="public">
+          <ownedParameter xmi:id="_fZt3bk3_EeihRf4zvfRhKw" name="return" type="_fYyDRE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZuecE3_EeihRf4zvfRhKw" name="setButtons" visibility="public">
+          <ownedParameter xmi:id="_fZuecU3_EeihRf4zvfRhKw" name="buttons" type="_fYyDRE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZueck3_EeihRf4zvfRhKw" name="init" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_fZuec03_EeihRf4zvfRhKw" name="keyTyped" visibility="public">
+          <ownedParameter xmi:id="_fZuedE3_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZuedU3_EeihRf4zvfRhKw" name="keyPressed" visibility="public">
+          <ownedParameter xmi:id="_fZuedk3_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZued03_EeihRf4zvfRhKw" name="keyReleased" visibility="public">
+          <ownedParameter xmi:id="_fZueeE3_EeihRf4zvfRhKw" name="e" type="_fYkn4k3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZueeU3_EeihRf4zvfRhKw" name="think" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZueek3_EeihRf4zvfRhKw" name="arg0" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZuee03_EeihRf4zvfRhKw" name="render" visibility="public"/>
+        <ownedOperation xmi:id="_fZvFgE3_EeihRf4zvfRhKw" name="paintComponent" visibility="public">
+          <ownedParameter xmi:id="_fZvFgU3_EeihRf4zvfRhKw" name="g" type="_fYyqUE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvFgk3_EeihRf4zvfRhKw" name="render" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZvFg03_EeihRf4zvfRhKw" name="arg0" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvFhE3_EeihRf4zvfRhKw" name="start" visibility="public"/>
+        <ownedOperation xmi:id="_fZvFhU3_EeihRf4zvfRhKw" name="stop" visibility="public"/>
+        <ownedOperation xmi:id="_fZvFhk3_EeihRf4zvfRhKw" name="setRestartThreadValues" visibility="public">
+          <ownedParameter xmi:id="_fZvFh03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvFiE3_EeihRf4zvfRhKw" name="getFPS" visibility="public">
+          <ownedParameter xmi:id="_fZvFiU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvFik3_EeihRf4zvfRhKw" name="renderFPS" visibility="public">
+          <ownedParameter xmi:id="_fZvFi03_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZvFjE3_EeihRf4zvfRhKw" name="x" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZvskE3_EeihRf4zvfRhKw" name="y" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvskU3_EeihRf4zvfRhKw" name="renderButtons" visibility="public">
+          <ownedParameter xmi:id="_fZvskk3_EeihRf4zvfRhKw" name="g" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvsk03_EeihRf4zvfRhKw" name="isBThink" visibility="public">
+          <ownedParameter xmi:id="_fZvslE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvslU3_EeihRf4zvfRhKw" name="setBThink" visibility="public">
+          <ownedParameter xmi:id="_fZvslk3_EeihRf4zvfRhKw" name="bThink" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvsl03_EeihRf4zvfRhKw" name="isBRepaint" visibility="public">
+          <ownedParameter xmi:id="_fZvsmE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvsmU3_EeihRf4zvfRhKw" name="setBRepaint" visibility="public">
+          <ownedParameter xmi:id="_fZvsmk3_EeihRf4zvfRhKw" name="bRepaint" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZvsm03_EeihRf4zvfRhKw" name="getBDirections" visibility="public">
+          <ownedParameter xmi:id="_fZvsnE3_EeihRf4zvfRhKw" name="return" type="_fYiysE3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZwToE3_EeihRf4zvfRhKw" name="setBDirections" visibility="public">
+          <ownedParameter xmi:id="_fZwToU3_EeihRf4zvfRhKw" name="bDirections" type="_fYiysE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZwTok3_EeihRf4zvfRhKw" name="isBBack" visibility="public">
+          <ownedParameter xmi:id="_fZwTo03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZwTpE3_EeihRf4zvfRhKw" name="setBBack" visibility="public">
+          <ownedParameter xmi:id="_fZwTpU3_EeihRf4zvfRhKw" name="bBack" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZwTpk3_EeihRf4zvfRhKw" name="isBLoose" visibility="public">
+          <ownedParameter xmi:id="_fZwTp03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZwTqE3_EeihRf4zvfRhKw" name="setBLoose" visibility="public">
+          <ownedParameter xmi:id="_fZwTqU3_EeihRf4zvfRhKw" name="bLoose" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZwTqk3_EeihRf4zvfRhKw" name="isBWin" visibility="public">
+          <ownedParameter xmi:id="_fZwTq03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZw6sE3_EeihRf4zvfRhKw" name="setBWin" visibility="public">
+          <ownedParameter xmi:id="_fZw6sU3_EeihRf4zvfRhKw" name="bWin" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZw6sk3_EeihRf4zvfRhKw" name="isBHelp" visibility="public">
+          <ownedParameter xmi:id="_fZw6s03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZw6tE3_EeihRf4zvfRhKw" name="setBHelp" visibility="public">
+          <ownedParameter xmi:id="_fZw6tU3_EeihRf4zvfRhKw" name="bHelp" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZw6tk3_EeihRf4zvfRhKw" name="mouseMoved" visibility="public">
+          <ownedParameter xmi:id="_fZw6t03_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZw6uE3_EeihRf4zvfRhKw" name="mousePressed" visibility="public">
+          <ownedParameter xmi:id="_fZw6uU3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZxhwE3_EeihRf4zvfRhKw" name="mouseReleased" visibility="public">
+          <ownedParameter xmi:id="_fZxhwU3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZxhwk3_EeihRf4zvfRhKw" name="mouseDragged" visibility="public">
+          <ownedParameter xmi:id="_fZxhw03_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZxhxE3_EeihRf4zvfRhKw" name="mouseClicked" visibility="public">
+          <ownedParameter xmi:id="_fZxhxU3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZxhxk3_EeihRf4zvfRhKw" name="mouseEntered" visibility="public">
+          <ownedParameter xmi:id="_fZxhx03_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZxhyE3_EeihRf4zvfRhKw" name="mouseExited" visibility="public">
+          <ownedParameter xmi:id="_fZxhyU3_EeihRf4zvfRhKw" name="e" type="_fYkn403_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZyI0E3_EeihRf4zvfRhKw" name="mouseWheelMoved" visibility="public">
+          <ownedParameter xmi:id="_fZyI0U3_EeihRf4zvfRhKw" name="e" type="_fYqHcE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZyI0k3_EeihRf4zvfRhKw" name="setButtonFunction" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZyI003_EeihRf4zvfRhKw" name="arg0" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZyI1E3_EeihRf4zvfRhKw" name="focusGained" visibility="public">
+          <ownedParameter xmi:id="_fZyI1U3_EeihRf4zvfRhKw" name="e" type="_fYzRYE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZyI1k3_EeihRf4zvfRhKw" name="focusLost" visibility="public">
+          <ownedParameter xmi:id="_fZyI103_EeihRf4zvfRhKw" name="e" type="_fYzRYE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_fYw1IE3_EeihRf4zvfRhKw" name="ApoTimerInterface" visibility="public" isAbstract="true">
+        <ownedOperation xmi:id="_fZyI2E3_EeihRf4zvfRhKw" name="think" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZyv4E3_EeihRf4zvfRhKw" name="arg0" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZyv4U3_EeihRf4zvfRhKw" name="render" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_fZyv4k3_EeihRf4zvfRhKw" name="isBThink" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZyv403_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZyv5E3_EeihRf4zvfRhKw" name="isBRepaint" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_fZyv5U3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYz4cE3_EeihRf4zvfRhKw" name="ApoStart" visibility="public">
+        <generalization xmi:id="_fYz4cU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZyv5k3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+        <ownedOperation xmi:id="_fZyv503_EeihRf4zvfRhKw" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_fZyv6E3_EeihRf4zvfRhKw" name="args" type="_fYhkkE3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYz4ck3_EeihRf4zvfRhKw" name="ApoTimer" visibility="public">
+        <generalization xmi:id="_fY0fgU3_EeihRf4zvfRhKw" general="_fY0fgE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZzW8E3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZzW8U3_EeihRf4zvfRhKw" name="game" type="_fYw1IE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZzW8k3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZzW803_EeihRf4zvfRhKw" name="isBWait" visibility="public">
+          <ownedParameter xmi:id="_fZzW9E3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZzW9U3_EeihRf4zvfRhKw" name="setBWait" visibility="public">
+          <ownedParameter xmi:id="_fZzW9k3_EeihRf4zvfRhKw" name="bWait" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZzW903_EeihRf4zvfRhKw" name="isBRender" visibility="public">
+          <ownedParameter xmi:id="_fZzW-E3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZzW-U3_EeihRf4zvfRhKw" name="setBRender" visibility="public">
+          <ownedParameter xmi:id="_fZzW-k3_EeihRf4zvfRhKw" name="bRender" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZzW-03_EeihRf4zvfRhKw" name="getWait" visibility="public">
+          <ownedParameter xmi:id="_fZzW_E3_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZzW_U3_EeihRf4zvfRhKw" name="setWait" visibility="public">
+          <ownedParameter xmi:id="_fZzW_k3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZzW_03_EeihRf4zvfRhKw" name="start" visibility="public"/>
+        <ownedOperation xmi:id="_fZzXAE3_EeihRf4zvfRhKw" name="stop" visibility="public"/>
+        <ownedOperation xmi:id="_fZz-AE3_EeihRf4zvfRhKw" name="isBRunning" visibility="public">
+          <ownedParameter xmi:id="_fZz-AU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZz-Ak3_EeihRf4zvfRhKw" name="setBRunning" visibility="public">
+          <ownedParameter xmi:id="_fZz-A03_EeihRf4zvfRhKw" name="bRunning" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZz-BE3_EeihRf4zvfRhKw" name="getFps" visibility="public">
+          <ownedParameter xmi:id="_fZz-BU3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZz-Bk3_EeihRf4zvfRhKw" name="run" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fY1GkE3_EeihRf4zvfRhKw" name="ApoConstants" visibility="public">
+        <generalization xmi:id="_fY1GkU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <ownedAttribute xmi:id="_fZz-B03_EeihRf4zvfRhKw" name="B_APPLET" visibility="public" isStatic="true" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        <ownedAttribute xmi:id="_fZz-CE3_EeihRf4zvfRhKw" name="B_FPS" visibility="public" isStatic="true" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        <ownedAttribute xmi:id="_fZz-CU3_EeihRf4zvfRhKw" name="DOWN" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedAttribute xmi:id="_fZz-Ck3_EeihRf4zvfRhKw" name="LEFT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedAttribute xmi:id="_fZz-C03_EeihRf4zvfRhKw" name="RIGHT" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedAttribute xmi:id="_fZz-DE3_EeihRf4zvfRhKw" name="UP" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedAttribute xmi:id="_fZz-DU3_EeihRf4zvfRhKw" name="STAND" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedAttribute xmi:id="_fZz-Dk3_EeihRf4zvfRhKw" name="NO_THREAD" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedAttribute xmi:id="_fZz-D03_EeihRf4zvfRhKw" name="ONE_THREADS" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedAttribute xmi:id="_fZ0lEE3_EeihRf4zvfRhKw" name="TWO_THREADS" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+        <ownedOperation xmi:id="_fZ0lEU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fY1toE3_EeihRf4zvfRhKw" name="ApoThread" visibility="public">
+        <generalization xmi:id="_fY2UsU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+        <interfaceRealization xmi:id="_fY2UsE3_EeihRf4zvfRhKw" client="_fY1toE3_EeihRf4zvfRhKw" supplier="_fYuY4E3_EeihRf4zvfRhKw" contract="_fYuY4E3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZ1zQE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ1zQU3_EeihRf4zvfRhKw" name="game" type="_fYw1IE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ2aQE3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ2aQU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ2aQk3_EeihRf4zvfRhKw" name="game" type="_fYw1IE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ2aQ03_EeihRf4zvfRhKw" name="waitThink" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ2aRE3_EeihRf4zvfRhKw" name="waitRender" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ2aRU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ2aRk3_EeihRf4zvfRhKw" name="game" type="_fYw1IE3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ2aR03_EeihRf4zvfRhKw" name="waitThink" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ2aSE3_EeihRf4zvfRhKw" name="waitRender" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ2aSU3_EeihRf4zvfRhKw" name="bThink" type="_fYiLo03_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ2aSk3_EeihRf4zvfRhKw" name="bRender" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ2aS03_EeihRf4zvfRhKw" name="isBThink" visibility="public">
+          <ownedParameter xmi:id="_fZ2aTE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ2aTU3_EeihRf4zvfRhKw" name="setBThink" visibility="public">
+          <ownedParameter xmi:id="_fZ2aTk3_EeihRf4zvfRhKw" name="bThink" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ2aT03_EeihRf4zvfRhKw" name="isBRender" visibility="public">
+          <ownedParameter xmi:id="_fZ2aUE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ2aUU3_EeihRf4zvfRhKw" name="setBRender" visibility="public">
+          <ownedParameter xmi:id="_fZ2aUk3_EeihRf4zvfRhKw" name="bRender" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ2aU03_EeihRf4zvfRhKw" name="getFps" visibility="public">
+          <ownedParameter xmi:id="_fZ3BUE3_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3BUU3_EeihRf4zvfRhKw" name="getWait" visibility="public">
+          <ownedParameter xmi:id="_fZ3BUk3_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3BU03_EeihRf4zvfRhKw" name="setWait" visibility="public">
+          <ownedParameter xmi:id="_fZ3BVE3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3BVU3_EeihRf4zvfRhKw" name="getWaitRender" visibility="public">
+          <ownedParameter xmi:id="_fZ3BVk3_EeihRf4zvfRhKw" name="return" type="_fYnrMU3_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3BV03_EeihRf4zvfRhKw" name="setWaitRender" visibility="public">
+          <ownedParameter xmi:id="_fZ3BWE3_EeihRf4zvfRhKw" name="wait" type="_fYnrMU3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3BWU3_EeihRf4zvfRhKw" name="start" visibility="public"/>
+        <ownedOperation xmi:id="_fZ3BWk3_EeihRf4zvfRhKw" name="stop" visibility="public"/>
+        <ownedOperation xmi:id="_fZ3BW03_EeihRf4zvfRhKw" name="isBRunning" visibility="public">
+          <ownedParameter xmi:id="_fZ3BXE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3BXU3_EeihRf4zvfRhKw" name="setBRunning" visibility="public">
+          <ownedParameter xmi:id="_fZ3BXk3_EeihRf4zvfRhKw" name="bRunning" type="_fYiLo03_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3BX03_EeihRf4zvfRhKw" name="run" visibility="public"/>
+        <ownedOperation xmi:id="_fZ3oYE3_EeihRf4zvfRhKw" name="setRestart" visibility="public">
+          <ownedParameter xmi:id="_fZ3oYU3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fY27wE3_EeihRf4zvfRhKw" name="ApoMain" visibility="public" isAbstract="true">
+        <generalization xmi:id="_fY27wk3_EeihRf4zvfRhKw" general="_fY27wU3_EeihRf4zvfRhKw"/>
+        <ownedAttribute xmi:id="_fZ3oYk3_EeihRf4zvfRhKw" name="main" visibility="public" isStatic="true" type="_fY27wE3_EeihRf4zvfRhKw"/>
+        <ownedOperation xmi:id="_fZ3oY03_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ3oZE3_EeihRf4zvfRhKw" name="splashUrl" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3oZU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+          <ownedParameter xmi:id="_fZ3oZk3_EeihRf4zvfRhKw" name="splashUrl" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ3oZ03_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          <ownedParameter xmi:id="_fZ3oaE3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ3oaU3_EeihRf4zvfRhKw" name="setComponent" visibility="public">
+          <ownedParameter xmi:id="_fZ3oak3_EeihRf4zvfRhKw" name="component" type="_fYwOEk3_EeihRf4zvfRhKw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_fZ4PcE3_EeihRf4zvfRhKw" name="init" visibility="public" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fY9pck3_EeihRf4zvfRhKw" name="help">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY-QgE3_EeihRf4zvfRhKw" name="ApoSplashScreen" visibility="public">
+          <generalization xmi:id="_fY-Qg03_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <interfaceRealization xmi:id="_fY-Qgk3_EeihRf4zvfRhKw" client="_fY-QgE3_EeihRf4zvfRhKw" supplier="_fY-QgU3_EeihRf4zvfRhKw" contract="_fY-QgU3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faHgDE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faHgDU3_EeihRf4zvfRhKw" name="path" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIHEE3_EeihRf4zvfRhKw" name="blendOut" visibility="public"/>
+          <ownedOperation xmi:id="_faIHEU3_EeihRf4zvfRhKw" name="actionPerformed" visibility="public">
+            <ownedParameter xmi:id="_faIHEk3_EeihRf4zvfRhKw" name="e" type="_fY-QhE3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY-QhU3_EeihRf4zvfRhKw" name="ApoFileFilter" visibility="public">
+          <generalization xmi:id="_fY-3kU3_EeihRf4zvfRhKw" general="_fY-3kE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faIHE03_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faIHFE3_EeihRf4zvfRhKw" name="s" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIHFU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faIHFk3_EeihRf4zvfRhKw" name="aString" type="_fYhkkE3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIHF03_EeihRf4zvfRhKw" name="getLevelName" visibility="public">
+            <ownedParameter xmi:id="_faIHGE3_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIHGU3_EeihRf4zvfRhKw" name="getExtension" visibility="public">
+            <ownedParameter xmi:id="_faIHGk3_EeihRf4zvfRhKw" name="file" type="_fY-3kk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faIHG03_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIHHE3_EeihRf4zvfRhKw" name="getDescription" visibility="public">
+            <ownedParameter xmi:id="_faIuIE3_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIuIU3_EeihRf4zvfRhKw" name="accept" visibility="public">
+            <ownedParameter xmi:id="_faIuIk3_EeihRf4zvfRhKw" name="file" type="_fY-3kk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faIuI03_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIuJE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY-3k03_EeihRf4zvfRhKw" name="ApoSplashPainter" visibility="public">
+          <generalization xmi:id="_fY-3lU3_EeihRf4zvfRhKw" general="_fY-3lE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faIuJU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+          <ownedOperation xmi:id="_faIuJk3_EeihRf4zvfRhKw" name="setImage" visibility="public">
+            <ownedParameter xmi:id="_faIuJ03_EeihRf4zvfRhKw" name="image" type="_fY_eoE3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faIuKE3_EeihRf4zvfRhKw" name="paintComponent" visibility="public">
+            <ownedParameter xmi:id="_faIuKU3_EeihRf4zvfRhKw" name="g" type="_fYyqUE3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY_eoU3_EeihRf4zvfRhKw" name="ApoFileNameFilter" visibility="public">
+          <generalization xmi:id="_fY_epE3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <interfaceRealization xmi:id="_fY_eo03_EeihRf4zvfRhKw" client="_fY_eoU3_EeihRf4zvfRhKw" supplier="_fY_eok3_EeihRf4zvfRhKw" contract="_fY_eok3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faIuKk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faJVME3_EeihRf4zvfRhKw" name="extension" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faJVMU3_EeihRf4zvfRhKw" name="accept" visibility="public">
+            <ownedParameter xmi:id="_faJVMk3_EeihRf4zvfRhKw" name="f" type="_fY-3kk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faJVM03_EeihRf4zvfRhKw" name="s" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faJVNE3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faJVNU3_EeihRf4zvfRhKw" name="getExtension" visibility="public">
+            <ownedParameter xmi:id="_faJVNk3_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faJVN03_EeihRf4zvfRhKw" name="setExtension" visibility="public">
+            <ownedParameter xmi:id="_faJVOE3_EeihRf4zvfRhKw" name="extension" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZAFsE3_EeihRf4zvfRhKw" name="ApoCopy" visibility="public">
+          <generalization xmi:id="_fZAFsU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faJVOU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+          <ownedOperation xmi:id="_faJVOk3_EeihRf4zvfRhKw" name="copyDirectory" visibility="public">
+            <ownedParameter xmi:id="_faJVO03_EeihRf4zvfRhKw" name="pSrcDirectory" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faJ8QE3_EeihRf4zvfRhKw" name="pCopyDirectory" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faJ8QU3_EeihRf4zvfRhKw" name="copyFile" visibility="public">
+            <ownedParameter xmi:id="_faJ8Qk3_EeihRf4zvfRhKw" name="pSrcFile" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faJ8Q03_EeihRf4zvfRhKw" name="pCopyFile" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZAFsk3_EeihRf4zvfRhKw" name="ApoFloatPoint" visibility="public">
+          <generalization xmi:id="_fZAFs03_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedAttribute xmi:id="_faJ8RE3_EeihRf4zvfRhKw" name="x" visibility="public" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedAttribute xmi:id="_faJ8RU3_EeihRf4zvfRhKw" name="y" visibility="public" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faJ8Rk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faJ8R03_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faJ8SE3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faJ8SU3_EeihRf4zvfRhKw" name="getX" visibility="public">
+            <ownedParameter xmi:id="_faJ8Sk3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faKjUE3_EeihRf4zvfRhKw" name="setX" visibility="public">
+            <ownedParameter xmi:id="_faKjUU3_EeihRf4zvfRhKw" name="x" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faKjUk3_EeihRf4zvfRhKw" name="getY" visibility="public">
+            <ownedParameter xmi:id="_faKjU03_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faKjVE3_EeihRf4zvfRhKw" name="setY" visibility="public">
+            <ownedParameter xmi:id="_faKjVU3_EeihRf4zvfRhKw" name="y" type="_fYnrME3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZAFtE3_EeihRf4zvfRhKw" name="ApoHelp" visibility="public">
+          <generalization xmi:id="_fZAswE3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faKjVk3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+          <ownedOperation xmi:id="_faKjV03_EeihRf4zvfRhKw" name="rotateImage" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faKjWE3_EeihRf4zvfRhKw" name="src" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faKjWU3_EeihRf4zvfRhKw" name="degrees" type="_fZAswU3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faKjWk3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faKjW03_EeihRf4zvfRhKw" name="rotateImageMethodTwo" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faKjXE3_EeihRf4zvfRhKw" name="inputImage" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKYE3_EeihRf4zvfRhKw" name="degrees" type="_fZAswU3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKYU3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faLKYk3_EeihRf4zvfRhKw" name="round" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faLKY03_EeihRf4zvfRhKw" name="value" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKZE3_EeihRf4zvfRhKw" name="adjust" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKZU3_EeihRf4zvfRhKw" name="return" type="_fYnrME3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faLKZk3_EeihRf4zvfRhKw" name="getAngleBetween2Points" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faLKZ03_EeihRf4zvfRhKw" name="a" type="_fYr8o03_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKaE3_EeihRf4zvfRhKw" name="b" type="_fYr8o03_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKaU3_EeihRf4zvfRhKw" name="return" type="_fZAswU3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faLKak3_EeihRf4zvfRhKw" name="getAngleBetween2Points" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faLKa03_EeihRf4zvfRhKw" name="x1" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKbE3_EeihRf4zvfRhKw" name="y1" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKbU3_EeihRf4zvfRhKw" name="x2" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKbk3_EeihRf4zvfRhKw" name="y2" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLKb03_EeihRf4zvfRhKw" name="return" type="_fZAswU3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faLxcE3_EeihRf4zvfRhKw" name="getCircleCuts" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faLxcU3_EeihRf4zvfRhKw" name="x1" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxck3_EeihRf4zvfRhKw" name="y1" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxc03_EeihRf4zvfRhKw" name="radius1" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxdE3_EeihRf4zvfRhKw" name="x2" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxdU3_EeihRf4zvfRhKw" name="y2" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxdk3_EeihRf4zvfRhKw" name="radius2" type="_fYnrME3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxd03_EeihRf4zvfRhKw" name="return" type="_fYqugk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faLxeE3_EeihRf4zvfRhKw" name="getTimeToDraw" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faLxeU3_EeihRf4zvfRhKw" name="time" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxek3_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faLxe03_EeihRf4zvfRhKw" name="getRandomValue" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_faLxfE3_EeihRf4zvfRhKw" name="value" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxfU3_EeihRf4zvfRhKw" name="plus" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faLxfk3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZAswk3_EeihRf4zvfRhKw" name="ApoClassLoader" visibility="public">
+          <generalization xmi:id="_fZBT0E3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faMYgE3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faMYgU3_EeihRf4zvfRhKw" name="path" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faMYgk3_EeihRf4zvfRhKw" name="classname" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faMYg03_EeihRf4zvfRhKw" name="getClassname" visibility="public">
+            <ownedParameter xmi:id="_faMYhE3_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faMYhU3_EeihRf4zvfRhKw" name="setClassname" visibility="public">
+            <ownedParameter xmi:id="_faMYhk3_EeihRf4zvfRhKw" name="classname" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faMYh03_EeihRf4zvfRhKw" name="getPath" visibility="public">
+            <ownedParameter xmi:id="_faMYiE3_EeihRf4zvfRhKw" name="return" type="_fYg9gk3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faMYiU3_EeihRf4zvfRhKw" name="setPath" visibility="public">
+            <ownedParameter xmi:id="_faMYik3_EeihRf4zvfRhKw" name="path" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faMYi03_EeihRf4zvfRhKw" name="getMyClass" visibility="public">
+            <ownedParameter xmi:id="_faMYjE3_EeihRf4zvfRhKw" name="return" type="_fYiLoE3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fZBT0U3_EeihRf4zvfRhKw" name="ApoInterface" visibility="public" isAbstract="true">
+          <ownedOperation xmi:id="_faM_kE3_EeihRf4zvfRhKw" name="init" visibility="public" isAbstract="true"/>
+          <ownedOperation xmi:id="_faM_kU3_EeihRf4zvfRhKw" name="think" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_faM_kk3_EeihRf4zvfRhKw" name="arg0" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faM_k03_EeihRf4zvfRhKw" name="render" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_faM_lE3_EeihRf4zvfRhKw" name="arg0" type="_fYlO8E3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fZBT0k3_EeihRf4zvfRhKw" name="image">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZBT003_EeihRf4zvfRhKw" name="ApoRawScale2x" visibility="public">
+          <generalization xmi:id="_fZBT1E3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faM_lU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faM_lk3_EeihRf4zvfRhKw" name="imageData" type="_fYr8pE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faM_l03_EeihRf4zvfRhKw" name="dataWidth" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faM_mE3_EeihRf4zvfRhKw" name="dataHeight" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faM_mU3_EeihRf4zvfRhKw" name="getScaledData" visibility="public">
+            <ownedParameter xmi:id="_faM_mk3_EeihRf4zvfRhKw" name="return" type="_fYr8pE3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZB64E3_EeihRf4zvfRhKw" name="ApoImageFromValue" visibility="public">
+          <generalization xmi:id="_fZB64U3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faM_m03_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+          <ownedOperation xmi:id="_faNmoE3_EeihRf4zvfRhKw" name="getImageFromPath" visibility="public">
+            <ownedParameter xmi:id="_faNmoU3_EeihRf4zvfRhKw" name="path" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faNmok3_EeihRf4zvfRhKw" name="bLoad" type="_fYiLo03_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faNmo03_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faNmpE3_EeihRf4zvfRhKw" name="getAndMakeIBackground" visibility="public">
+            <ownedParameter xmi:id="_faNmpU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faNmpk3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faNmp03_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faNmqE3_EeihRf4zvfRhKw" name="getAndMakeIBackground" visibility="public">
+            <ownedParameter xmi:id="_faNmqU3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faNmqk3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faNmq03_EeihRf4zvfRhKw" name="c" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faNmrE3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faNmrU3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+            <ownedParameter xmi:id="_faONsE3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONsU3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONsk3_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONs03_EeihRf4zvfRhKw" name="round" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONtE3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faONtU3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+            <ownedParameter xmi:id="_faONtk3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONt03_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONuE3_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONuU3_EeihRf4zvfRhKw" name="background" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONuk3_EeihRf4zvfRhKw" name="font" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONu03_EeihRf4zvfRhKw" name="border" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONvE3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faONvU3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+            <ownedParameter xmi:id="_faONvk3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faONv03_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0wE3_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0wU3_EeihRf4zvfRhKw" name="background" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0wk3_EeihRf4zvfRhKw" name="font" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0w03_EeihRf4zvfRhKw" name="border" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0xE3_EeihRf4zvfRhKw" name="round" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0xU3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faO0xk3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+            <ownedParameter xmi:id="_faO0x03_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0yE3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0yU3_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0yk3_EeihRf4zvfRhKw" name="background" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0y03_EeihRf4zvfRhKw" name="font" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0zE3_EeihRf4zvfRhKw" name="border" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0zU3_EeihRf4zvfRhKw" name="over" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0zk3_EeihRf4zvfRhKw" name="pressed" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faO0z03_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faPb0E3_EeihRf4zvfRhKw" name="getButtonImage" visibility="public">
+            <ownedParameter xmi:id="_faPb0U3_EeihRf4zvfRhKw" name="width" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb0k3_EeihRf4zvfRhKw" name="height" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb003_EeihRf4zvfRhKw" name="text" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb1E3_EeihRf4zvfRhKw" name="background" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb1U3_EeihRf4zvfRhKw" name="font" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb1k3_EeihRf4zvfRhKw" name="border" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb103_EeihRf4zvfRhKw" name="over" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb2E3_EeihRf4zvfRhKw" name="pressed" type="_fYmdEE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb2U3_EeihRf4zvfRhKw" name="writeFont" type="_fYiysk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb2k3_EeihRf4zvfRhKw" name="round" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faPb203_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZCh8E3_EeihRf4zvfRhKw" name="ApoImage" visibility="public">
+          <generalization xmi:id="_fZCh9E3_EeihRf4zvfRhKw" general="_fZCh8k3_EeihRf4zvfRhKw"/>
+          <interfaceRealization xmi:id="_fZCh803_EeihRf4zvfRhKw" client="_fZCh8E3_EeihRf4zvfRhKw" supplier="_fZCh8U3_EeihRf4zvfRhKw" contract="_fZCh8U3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faPb3E3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+          <ownedOperation xmi:id="_faPb3U3_EeihRf4zvfRhKw" name="getPic" visibility="public">
+            <ownedParameter xmi:id="_faQC4E3_EeihRf4zvfRhKw" name="pic" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faQC4U3_EeihRf4zvfRhKw" name="bLoad" type="_fYiLo03_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faQC4k3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZDJAE3_EeihRf4zvfRhKw" name="ApoImageScale" visibility="public">
+          <generalization xmi:id="_fZDJAU3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedAttribute xmi:id="_faQC403_EeihRf4zvfRhKw" name="ORIGINAL_SCALE" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_faQC5E3_EeihRf4zvfRhKw" name="DOUBLE_SCALE" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_faQC5U3_EeihRf4zvfRhKw" name="TRIPPLE_SCALE" visibility="public" isLeaf="true" isStatic="true" type="_fYiLok3_EeihRf4zvfRhKw" isReadOnly="true"/>
+          <ownedOperation xmi:id="_faQC5k3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faQC503_EeihRf4zvfRhKw" name="srcFile" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faQC6E3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faQC6U3_EeihRf4zvfRhKw" name="srcFile" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faQC6k3_EeihRf4zvfRhKw" name="scale" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faQp8E3_EeihRf4zvfRhKw" name="getScale" visibility="public">
+            <ownedParameter xmi:id="_faQp8U3_EeihRf4zvfRhKw" name="return" type="_fYiLok3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faQp8k3_EeihRf4zvfRhKw" name="setScale" visibility="public">
+            <ownedParameter xmi:id="_faQp803_EeihRf4zvfRhKw" name="scale" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faQp9E3_EeihRf4zvfRhKw" name="writeScaledImage" visibility="public">
+            <ownedParameter xmi:id="_faQp9U3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faQp9k3_EeihRf4zvfRhKw" name="writeScaledImage" visibility="public">
+            <ownedParameter xmi:id="_faQp903_EeihRf4zvfRhKw" name="writeFile" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faQp-E3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faQp-U3_EeihRf4zvfRhKw" name="writeScaledImage" visibility="public">
+            <ownedParameter xmi:id="_faQp-k3_EeihRf4zvfRhKw" name="iOriginal" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faQp-03_EeihRf4zvfRhKw" name="writeFile" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faQp_E3_EeihRf4zvfRhKw" name="return" type="_fYiLo03_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faQp_U3_EeihRf4zvfRhKw" name="getDoubleScaledImage" visibility="public">
+            <ownedParameter xmi:id="_faQp_k3_EeihRf4zvfRhKw" name="srcImage" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faQp_03_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faRRAE3_EeihRf4zvfRhKw" name="getTrippleScaledImage" visibility="public">
+            <ownedParameter xmi:id="_faRRAU3_EeihRf4zvfRhKw" name="srcImage" type="_fYkA0E3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faRRAk3_EeihRf4zvfRhKw" name="return" type="_fYkA0E3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZDJAk3_EeihRf4zvfRhKw" name="ApoRawScale3x" visibility="public">
+          <generalization xmi:id="_fZDJA03_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faRRA03_EeihRf4zvfRhKw" name="&lt;init>" visibility="public">
+            <ownedParameter xmi:id="_faRRBE3_EeihRf4zvfRhKw" name="imageData" type="_fYr8pE3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faRRBU3_EeihRf4zvfRhKw" name="dataWidth" type="_fYiLok3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faRRBk3_EeihRf4zvfRhKw" name="dataHeight" type="_fYiLok3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faRRB03_EeihRf4zvfRhKw" name="getScaledData" visibility="public">
+            <ownedParameter xmi:id="_faRRCE3_EeihRf4zvfRhKw" name="return" type="_fYr8pE3_EeihRf4zvfRhKw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fZDwEE3_EeihRf4zvfRhKw" name="sound">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fZDwEU3_EeihRf4zvfRhKw" name="ApoSounds" visibility="public">
+          <generalization xmi:id="_fZDwEk3_EeihRf4zvfRhKw" general="_fYiLoE3_EeihRf4zvfRhKw"/>
+          <ownedOperation xmi:id="_faRRCU3_EeihRf4zvfRhKw" name="&lt;init>" visibility="public"/>
+          <ownedOperation xmi:id="_faRRCk3_EeihRf4zvfRhKw" name="loadSound" visibility="public">
+            <ownedParameter xmi:id="_faRRC03_EeihRf4zvfRhKw" name="name" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+            <ownedParameter xmi:id="_faRRDE3_EeihRf4zvfRhKw" name="path" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faRRDU3_EeihRf4zvfRhKw" name="playSound" visibility="public">
+            <ownedParameter xmi:id="_faR4EE3_EeihRf4zvfRhKw" name="name" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faR4EU3_EeihRf4zvfRhKw" name="loopSound" visibility="public">
+            <ownedParameter xmi:id="_faR4Ek3_EeihRf4zvfRhKw" name="name" type="_fYg9gk3_EeihRf4zvfRhKw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_faR4E03_EeihRf4zvfRhKw" name="stopLoopingSound" visibility="public"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fYg9gE3_EeihRf4zvfRhKw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYg9gU3_EeihRf4zvfRhKw" name="lang">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYg9gk3_EeihRf4zvfRhKw" name="String" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYhkkE3_EeihRf4zvfRhKw" name="String[]" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYiLoE3_EeihRf4zvfRhKw" name="Object" isAbstract="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_fYiLok3_EeihRf4zvfRhKw" name="int"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_fYiLo03_EeihRf4zvfRhKw" name="boolean"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYiysE3_EeihRf4zvfRhKw" name="boolean[]" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_fYnrME3_EeihRf4zvfRhKw" name="float"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_fYnrMU3_EeihRf4zvfRhKw" name="long"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYr8pE3_EeihRf4zvfRhKw" name="int[]" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_fYuY4E3_EeihRf4zvfRhKw" name="Runnable" isAbstract="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_fZAswU3_EeihRf4zvfRhKw" name="double"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYiysU3_EeihRf4zvfRhKw" name="awt">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fYjZxE3_EeihRf4zvfRhKw" name="image">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fYkA0E3_EeihRf4zvfRhKw" name="BufferedImage" isLeaf="true" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fZCh8U3_EeihRf4zvfRhKw" name="ImageObserver" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYiysk3_EeihRf4zvfRhKw" name="Font" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fYkn4U3_EeihRf4zvfRhKw" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fYkn4k3_EeihRf4zvfRhKw" name="KeyEvent" isLeaf="true" isAbstract="true"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fYkn403_EeihRf4zvfRhKw" name="MouseEvent" isLeaf="true" isAbstract="true"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fYqHcE3_EeihRf4zvfRhKw" name="MouseWheelEvent" isLeaf="true" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fYw1IU3_EeihRf4zvfRhKw" name="KeyListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fYw1Ik3_EeihRf4zvfRhKw" name="MouseListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fYw1I03_EeihRf4zvfRhKw" name="MouseMotionListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fYw1JE3_EeihRf4zvfRhKw" name="MouseWheelListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fYxcME3_EeihRf4zvfRhKw" name="FocusListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fYzRYE3_EeihRf4zvfRhKw" name="FocusEvent" isLeaf="true" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fY-QgU3_EeihRf4zvfRhKw" name="ActionListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_fY-QhE3_EeihRf4zvfRhKw" name="ActionEvent" isLeaf="true" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYlO8E3_EeihRf4zvfRhKw" name="Graphics2D" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYmdEE3_EeihRf4zvfRhKw" name="Color" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYr8o03_EeihRf4zvfRhKw" name="Point" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYu_8E3_EeihRf4zvfRhKw" name="Frame" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYyqUE3_EeihRf4zvfRhKw" name="Graphics" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fY3i0E3_EeihRf4zvfRhKw" name="Canvas" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fY6mIE3_EeihRf4zvfRhKw" name="geom">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY7NME3_EeihRf4zvfRhKw" name="Rectangle2D" isLeaf="true" isAbstract="true">
+          <nestedClassifier xmi:type="uml:DataType" xmi:id="_fY7NMU3_EeihRf4zvfRhKw" name="Float" isLeaf="true" isAbstract="true"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fY_eoE3_EeihRf4zvfRhKw" name="Image" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fZCh8k3_EeihRf4zvfRhKw" name="Component" isAbstract="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYqugU3_EeihRf4zvfRhKw" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYqugk3_EeihRf4zvfRhKw" name="ArrayList" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fY0fgE3_EeihRf4zvfRhKw" name="TimerTask" isAbstract="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYtx0E3_EeihRf4zvfRhKw" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYtx0U3_EeihRf4zvfRhKw" name="DataInputStream" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fYtx0k3_EeihRf4zvfRhKw" name="DataOutputStream" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_fY-3kk3_EeihRf4zvfRhKw" name="File" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_fY_eok3_EeihRf4zvfRhKw" name="FilenameFilter" isAbstract="true"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fYvnAU3_EeihRf4zvfRhKw" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fYvnAk3_EeihRf4zvfRhKw" name="swing">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fY-Qhk3_EeihRf4zvfRhKw" name="filechooser">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fY-3kE3_EeihRf4zvfRhKw" name="FileFilter" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYvnA03_EeihRf4zvfRhKw" name="JApplet" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fYxcMU3_EeihRf4zvfRhKw" name="JComponent" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fY27wU3_EeihRf4zvfRhKw" name="JFrame" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fY-3lE3_EeihRf4zvfRhKw" name="JLabel" isAbstract="true"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

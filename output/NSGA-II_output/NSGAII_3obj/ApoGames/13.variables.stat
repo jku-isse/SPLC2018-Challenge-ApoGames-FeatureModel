@@ -1,0 +1,399 @@
+0.05291005223989487 1.0 0.0
+Feature Model: Root(menu(Or(apobase(Optional(playwithkeybord), Optional(stop), Optional(time), Optional(highscores), Optional(playwithmouse))), Optional(levels), Alternative(Optional(editor) play Optional(load)), Optional(scores), Optional(restart), Optional(sound)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 378
+Number of Contained Products: 20
+Broken Dependencies: 
+
+0.06462585180997849 0.949999988079071 0.0
+Feature Model: Root(play(Or(apobase(Optional(playwithkeybord), Optional(stop), Optional(time), Optional(highscores), Optional(playwithmouse))), Optional(levels), Alternative(Optional(editor(Optional(sound))) menu Optional(load)), Optional(scores), Optional(restart)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 294
+Number of Contained Products: 19
+Broken Dependencies: 
+
+0.0714285746216774 0.8999999761581421 0.0
+Feature Model: Root(play(Alternative(apobase(Optional(playwithkeybord), Optional(stop), Optional(time), Optional(playwithmouse))), Or(Optional(editor(Optional(highscores))) menu Optional(load(Optional(restart)))), Optional(sound), Optional(scores), Optional(levels)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 252
+Number of Contained Products: 18
+Broken Dependencies: 
+
+0.0714285746216774 0.8999999761581421 0.0
+Feature Model: Root(play(Alternative(apobase(Optional(playwithkeybord), Optional(stop), Optional(time), Optional(playwithmouse))), Alternative(Optional(editor(Optional(highscores))) menu Optional(load(Optional(restart)))), Optional(sound), Optional(scores), Optional(levels)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 252
+Number of Contained Products: 18
+Broken Dependencies: 
+
+0.09941520541906357 0.8500000238418579 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithkeybord), Optional(sound), Optional(playwithmouse), Optional(levels))), Or(Optional(editor(Optional(highscores))) menu Optional(load(Alternative(restart)))), Optional(stop), Optional(scores), Optional(time)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 171
+Number of Contained Products: 17
+Broken Dependencies: 
+
+0.09941520541906357 0.8500000238418579 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithkeybord), Optional(sound), Optional(playwithmouse), Optional(levels))), Alternative(Optional(editor(Optional(highscores))) menu Optional(load(Alternative(restart)))), Optional(stop), Optional(scores), Optional(time)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 171
+Number of Contained Products: 17
+Broken Dependencies: 
+
+0.12030075490474701 0.800000011920929 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse), Optional(playwithkeybord(Optional(time))), Optional(levels))), Mandatory(menu(Optional(editor(Optional(highscores))), Optional(load(Mandatory(restart))), Optional(sound))), Optional(stop), Optional(scores)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 133
+Number of Contained Products: 16
+Broken Dependencies: 
+
+0.15789473056793213 0.75 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))), Optional(playwithkeybord(Optional(time))), Optional(stop))), Mandatory(Optional(editor(Optional(highscores))) menu Optional(load(Mandatory(restart)))), Optional(levels), Optional(scores)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 95
+Number of Contained Products: 15
+Broken Dependencies: 
+
+0.1794871836900711 0.699999988079071 0.0
+Feature Model: Root(play(Mandatory(Optional(playwithkeybord) apobase Optional(playwithmouse)), Optional(levels), Alternative(menu(Optional(editor(Optional(highscores))), Optional(load(Optional(time), Mandatory(restart), Optional(scores))), Optional(sound))), Optional(stop)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(apobase)) Or Atom(play)))
+Number Of Products: 78
+Number of Contained Products: 14
+Broken Dependencies: 
+
+0.22033898532390594 0.6499999761581421 0.0
+Feature Model: Root(apobase(Optional(levels(Optional(editor))), Optional(sound), Or(Optional(playwithkeybord(Optional(time(Optional(highscores))))) play Or(menu)), Optional(playwithmouse), Optional(restart(Mandatory(load), Optional(scores), Optional(stop)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 59
+Number of Contained Products: 13
+Broken Dependencies: 
+
+0.27272728085517883 0.6000000238418579 0.0
+Feature Model: Root(Optional(Optional(highscores) levels Optional(editor)) apobase Mandatory(menu(Or(Optional(Mandatory(restart) load Optional(stop)) play Optional(playwithkeybord(Optional(time(Optional(scores)))))), Optional(sound), Optional(playwithmouse))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(highscores)) Or Atom(restart)))
+Number Of Products: 44
+Number of Contained Products: 12
+Broken Dependencies: 
+
+0.37931033968925476 0.550000011920929 0.0
+Feature Model: Root(Mandatory(menu(Alternative(Optional(Mandatory(restart) load Optional(stop)) play Optional(Optional(highscores) levels Mandatory(editor))), Optional(sound), Optional(playwithmouse))) apobase Optional(playwithkeybord(Optional(time(Optional(scores))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(highscores)) Or Atom(restart)))
+Number Of Products: 29
+Number of Contained Products: 11
+Broken Dependencies: 
+
+0.37931033968925476 0.550000011920929 0.0
+Feature Model: Root(Mandatory(menu(Or(Optional(Mandatory(restart) load Optional(stop)) play Optional(Optional(highscores) levels Mandatory(editor))), Optional(sound), Optional(playwithmouse))) apobase Optional(playwithkeybord(Optional(time(Optional(scores))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(highscores)) Or Atom(restart)))
+Number Of Products: 29
+Number of Contained Products: 11
+Broken Dependencies: 
+
+0.4000000059604645 0.5 0.0
+Feature Model: Root(play(Mandatory(menu), Or(Optional(playwithkeybord(Optional(time(Optional(scores))))) apobase Optional(playwithmouse(Optional(sound)))), Optional(Optional(highscores) editor Mandatory(levels)), Optional(load(Mandatory(restart(Optional(stop)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 25
+Number of Contained Products: 10
+Broken Dependencies: 
+
+0.44999998807907104 0.44999998807907104 0.0
+Feature Model: Root(play(Mandatory(menu), Alternative(apobase(Optional(playwithkeybord(Optional(time(Mandatory(scores))))), Optional(sound), Optional(playwithmouse))), Optional(Optional(highscores) levels Mandatory(editor(Optional(Mandatory(restart) load Optional(stop)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 20
+Number of Contained Products: 9
+Broken Dependencies: 
+
+0.44999998807907104 0.44999998807907104 0.0
+Feature Model: Root(play(Mandatory(menu(Optional(playwithkeybord(Optional(time(Mandatory(scores))))))), Alternative(Optional(sound) apobase Optional(playwithmouse)), Optional(Optional(highscores) levels Mandatory(editor(Optional(Mandatory(restart) load Optional(stop)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 20
+Number of Contained Products: 9
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))) load Optional(stop))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Optional(highscores) editor Mandatory(levels)), Optional(Mandatory(restart(Alternative(playwithkeybord(Optional(time(Optional(scores))))))) load Optional(stop))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Mandatory(sound))))), Or(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(load(Mandatory(Optional(stop) restart Or(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(apobase)) Or Atom(menu)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Alternative(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Or(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores)))))))), Or(menu)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Alternative(menu), Alternative(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(load(Mandatory(Or(playwithkeybord(Optional(time(Optional(scores))))) restart Optional(stop))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Alternative(apobase(Optional(playwithmouse(Optional(sound))))), Or(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Alternative(playwithkeybord(Optional(time(Optional(scores)))))))), Alternative(menu)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(apobase(Mandatory(Or(menu) play Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(playwithmouse(Optional(sound)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Alternative(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Alternative(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(editor(Mandatory(levels))), Optional(Mandatory(Or(playwithkeybord(Optional(time(Optional(scores))))) restart Optional(stop)) load Optional(highscores))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(menu), Alternative(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(load(Mandatory(Or(playwithkeybord(Optional(time(Optional(scores))))) restart Optional(stop))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(menu(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(load(Mandatory(restart(Alternative(playwithkeybord(Optional(time(Optional(scores))))))))), Optional(stop)))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(load)) Or Atom(restart)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores)))))))), Alternative(menu)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Alternative(playwithkeybord(Optional(time(Optional(scores)))))))), Or(menu)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Optional(highscores) editor Mandatory(levels)), Optional(load(Alternative(Or(playwithkeybord(Optional(time(Optional(scores))))) restart Optional(stop))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Optional(highscores) editor Mandatory(levels)), Optional(load(Mandatory(Optional(stop) restart Or(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Alternative(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(Or(playwithkeybord) restart Optional(time(Optional(scores)))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(menu(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(load(Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))))), Optional(stop)))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(load)) Or Atom(restart)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Optional(highscores) editor Mandatory(levels)), Optional(load(Mandatory(Alternative(playwithkeybord(Optional(time(Optional(scores))))) restart Optional(stop))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Mandatory(sound))))), Or(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(apobase)) Or Atom(menu)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(apobase(Mandatory(play(Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores)))))))))), Optional(Optional(highscores) levels Mandatory(editor)), Mandatory(menu), Optional(playwithmouse(Mandatory(sound)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Optional(highscores) editor Mandatory(levels)), Optional(load(Mandatory(Or(playwithkeybord(Optional(time(Optional(scores))))) restart Optional(stop))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Or(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Alternative(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Mandatory(sound))))), Alternative(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(Mandatory(restart(Alternative(playwithkeybord(Optional(time(Optional(scores))))))) load Optional(stop)), Optional(Optional(highscores) editor Mandatory(levels))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6153846383094788 0.4000000059604645 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Optional(stop) load Mandatory(restart(Or(playwithkeybord(Optional(time(Optional(scores)))))))), Mandatory(menu)))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 13
+Number of Contained Products: 8
+Broken Dependencies: 
+
+0.6363636255264282 0.3499999940395355 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Or(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Mandatory(restart(Or(playwithkeybord(Optional(time(Mandatory(scores))))))) load Optional(stop))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 11
+Number of Contained Products: 7
+Broken Dependencies: 
+
+0.6363636255264282 0.3499999940395355 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Alternative(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Mandatory(restart(Or(playwithkeybord(Optional(time(Mandatory(scores))))))) load Optional(stop))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 11
+Number of Contained Products: 7
+Broken Dependencies: 
+
+0.6363636255264282 0.3499999940395355 0.0
+Feature Model: Root(play(Mandatory(menu), Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Mandatory(restart(Or(playwithkeybord(Optional(time(Mandatory(scores))))))) load Optional(stop))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 11
+Number of Contained Products: 7
+Broken Dependencies: 
+
+0.6363636255264282 0.3499999940395355 0.0
+Feature Model: Root(play(Or(apobase(Optional(playwithmouse(Optional(sound))))), Alternative(menu), Optional(Optional(highscores) levels Mandatory(editor)), Optional(Mandatory(restart(Alternative(playwithkeybord(Optional(time(Mandatory(scores))))))) load Optional(stop))))
+CTCs: ConstraintSet(Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 11
+Number of Contained Products: 7
+Broken Dependencies: 
+
+0.8571428656578064 0.30000001192092896 0.0
+Feature Model: Root(play(Alternative(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(levels(Optional(highscores), Mandatory(playwithkeybord(Optional(load(Mandatory(restart(Or(editor(Optional(time(Mandatory(scores))))))))))), Optional(stop)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 7
+Number of Contained Products: 6
+Broken Dependencies: 
+
+0.8571428656578064 0.30000001192092896 0.0
+Feature Model: Root(play(Alternative(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Optional(levels(Optional(highscores), Mandatory(playwithkeybord(Optional(load(Mandatory(restart(Alternative(editor(Optional(time(Mandatory(scores))))))))))), Optional(stop)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 7
+Number of Contained Products: 6
+Broken Dependencies: 
+
+1.0 0.25 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Mandatory(levels(Optional(highscores), Mandatory(playwithkeybord(Optional(load(Mandatory(restart(Or(editor(Optional(time(Mandatory(scores))))))))))), Optional(stop)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 5
+Number of Contained Products: 5
+Broken Dependencies: 
+
+1.0 0.25 0.0
+Feature Model: Root(menu(Mandatory(play), Mandatory(Optional(playwithmouse(Optional(sound))) apobase Optional(stop)), Mandatory(Optional(highscores) levels Mandatory(playwithkeybord(Optional(load(Mandatory(restart(Or(editor(Optional(time(Mandatory(scores))))))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 5
+Number of Contained Products: 5
+Broken Dependencies: 
+
+1.0 0.25 0.0
+Feature Model: Root(menu(Mandatory(play), Mandatory(Optional(playwithmouse(Optional(sound))) apobase Optional(stop)), Mandatory(Optional(highscores) levels Mandatory(playwithkeybord(Optional(load(Mandatory(restart(Alternative(editor(Optional(time(Mandatory(scores))))))))))))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(highscores)) Or Atom(levels)), Constraint(Not(Atom(editor)) Or Atom(levels)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(playwithmouse)) Or Atom(sound)))
+Number Of Products: 5
+Number of Contained Products: 5
+Broken Dependencies: 
+
+1.0 0.25 0.0
+Feature Model: Root(play(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Mandatory(levels(Optional(highscores), Mandatory(playwithkeybord(Optional(load(Or(restart(Or(editor(Optional(time(Mandatory(scores))))))))))), Optional(stop)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(highscores)) Or Atom(restart)), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 5
+Number of Contained Products: 5
+Broken Dependencies: 
+
+1.0 0.25 0.0
+Feature Model: Root(playwithkeybord(Mandatory(play(Optional(load(Mandatory(restart(Or(editor(Optional(time(Mandatory(scores))))))))))), Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Mandatory(Optional(highscores) levels Optional(stop))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(time))), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 5
+Number of Contained Products: 5
+Broken Dependencies: 
+
+1.0 0.25 0.0
+Feature Model: Root(playwithkeybord(Mandatory(apobase(Optional(playwithmouse(Optional(sound))))), Mandatory(menu), Mandatory(levels(Optional(highscores), Mandatory(play(Optional(load(Mandatory(restart(Or(editor(Optional(time(Mandatory(scores))))))))))), Optional(stop)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(load))), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)), Constraint(Not(Atom(sound)) Or Not(Atom(play))))
+Number Of Products: 5
+Number of Contained Products: 5
+Broken Dependencies: 
+
+1.0 0.25 0.0
+Feature Model: Root(Mandatory(Mandatory(play(Optional(load(Mandatory(restart(Or(editor(Optional(time(Mandatory(scores))))))))))) playwithkeybord Mandatory(levels(Optional(highscores)))) menu Or(Optional(stop) apobase Optional(playwithmouse(Optional(sound)))))
+CTCs: ConstraintSet(Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), Constraint(Not(Atom(highscores)) Or Atom(scores)), Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), Constraint(Not(Atom(stop)) Or Atom(scores)))
+Number Of Products: 5
+Number of Contained Products: 5
+Broken Dependencies: 
+

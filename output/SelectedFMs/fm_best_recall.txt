@@ -1,0 +1,37 @@
+0.05847953259944916 1.0 0.0
+
+Feature Model: 
+Root(apobase(
+	Mandatory(menu(
+		Mandatory(
+			Optional(scores) 
+			play 
+			Optional(sound)
+		)
+	)), 
+	Optional(levels(
+		Optional(editor)
+	)), 
+	Optional(restart(
+		Optional(highscores)
+	)), 
+	Optional(load), 
+	Optional(time), 
+	Optional(stop), 
+	Optional(playwithmouse), 
+	Optional(playwithkeybord)
+))
+
+CTCs: ConstraintSet(
+	Constraint(Not(Atom(playwithkeybord)) Or Not(Atom(playwithmouse))), 
+	Constraint(Not(Atom(highscores)) Or Atom(scores)), 
+	Constraint(Not(Atom(sound)) Or Not(Atom(time))), 
+	Constraint(Not(Atom(sound)) Or Not(Atom(stop))), 
+	Constraint(Not(Atom(stop)) Or Not(Atom(highscores))), 
+	Constraint(Not(Atom(stop)) Or Atom(scores)), 
+	Constraint(Not(Atom(restart)) Or Atom(apobase))
+)
+
+Number Of Products: 342
+Number of Contained Products: 20
+Broken Dependencies:

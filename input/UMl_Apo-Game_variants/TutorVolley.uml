@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aMENsEcjEeiOfYMRNMt5hQ" name="ApoGame">
+  <packagedElement xmi:type="uml:Package" xmi:id="_aMIfIEcjEeiOfYMRNMt5hQ" name="apoGame">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_aMJGMEcjEeiOfYMRNMt5hQ" name="TutorVolleyAI" visibility="public" isAbstract="true">
+      <ownedOperation xmi:id="_aMQa8EcjEeiOfYMRNMt5hQ" name="think" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_aMQa8UcjEeiOfYMRNMt5hQ" name="arg0" type="_aMKUUEcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMQa8kcjEeiOfYMRNMt5hQ" name="arg1" type="_aMOlwUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMQa80cjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMRCAEcjEeiOfYMRNMt5hQ" name="getName" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_aMRCAUcjEeiOfYMRNMt5hQ" name="return" type="_aMJtREcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMRCAkcjEeiOfYMRNMt5hQ" name="getAuthorName" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_aMRCA0cjEeiOfYMRNMt5hQ" name="return" type="_aMJtREcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMKUUEcjEeiOfYMRNMt5hQ" name="TutorVolleyBall" visibility="public">
+      <generalization xmi:id="_aMKUUkcjEeiOfYMRNMt5hQ" general="_aMKUUUcjEeiOfYMRNMt5hQ"/>
+      <ownedAttribute xmi:id="_aMRCBEcjEeiOfYMRNMt5hQ" name="GRAVITATION" visibility="public" isLeaf="true" isStatic="true" type="_aMKUU0cjEeiOfYMRNMt5hQ" isReadOnly="true"/>
+      <ownedOperation xmi:id="_aMRCBUcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMRCBkcjEeiOfYMRNMt5hQ" name="iBall" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMRCB0cjEeiOfYMRNMt5hQ" name="x" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMRCCEcjEeiOfYMRNMt5hQ" name="y" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMRCCUcjEeiOfYMRNMt5hQ" name="width" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMRCCkcjEeiOfYMRNMt5hQ" name="height" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMRpEEcjEeiOfYMRNMt5hQ" name="init" visibility="protected"/>
+      <ownedOperation xmi:id="_aMRpEUcjEeiOfYMRNMt5hQ" name="getBFirst" visibility="public">
+        <ownedParameter xmi:id="_aMRpEkcjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMRpE0cjEeiOfYMRNMt5hQ" name="setBFirst" visibility="protected">
+        <ownedParameter xmi:id="_aMRpFEcjEeiOfYMRNMt5hQ" name="bFirst" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMRpFUcjEeiOfYMRNMt5hQ" name="setBDown" visibility="protected">
+        <ownedParameter xmi:id="_aMRpFkcjEeiOfYMRNMt5hQ" name="bDown" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMRpF0cjEeiOfYMRNMt5hQ" name="think" visibility="protected">
+        <ownedParameter xmi:id="_aMRpGEcjEeiOfYMRNMt5hQ" name="playerOne" type="_aMOlwUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMRpGUcjEeiOfYMRNMt5hQ" name="playerTwo" type="_aMOlwUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMRpGkcjEeiOfYMRNMt5hQ" name="panel" type="_aMNXoUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMRpG0cjEeiOfYMRNMt5hQ" name="getXSpeed" visibility="public">
+        <ownedParameter xmi:id="_aMRpHEcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMSQIEcjEeiOfYMRNMt5hQ" name="getYSpeed" visibility="public">
+        <ownedParameter xmi:id="_aMSQIUcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMSQIkcjEeiOfYMRNMt5hQ" name="render" visibility="protected">
+        <ownedParameter xmi:id="_aMSQI0cjEeiOfYMRNMt5hQ" name="gfx" type="_aMK7ZEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMSQJEcjEeiOfYMRNMt5hQ" name="render" visibility="protected">
+        <ownedParameter xmi:id="_aMSQJUcjEeiOfYMRNMt5hQ" name="gfx" type="_aMK7ZUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMKUUUcjEeiOfYMRNMt5hQ" name="TutorVolleyEntity" visibility="public">
+      <generalization xmi:id="_aMMJgUcjEeiOfYMRNMt5hQ" general="_aMJtQEcjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMVTdkcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMVTd0cjEeiOfYMRNMt5hQ" name="iBackground" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMVTeEcjEeiOfYMRNMt5hQ" name="x" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMVTeUcjEeiOfYMRNMt5hQ" name="y" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMVTekcjEeiOfYMRNMt5hQ" name="width" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMVTe0cjEeiOfYMRNMt5hQ" name="height" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMVTfEcjEeiOfYMRNMt5hQ" name="getIBackground" visibility="protected">
+        <ownedParameter xmi:id="_aMVTfUcjEeiOfYMRNMt5hQ" name="return" type="_aMK7YUcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6gEcjEeiOfYMRNMt5hQ" name="setIBackground" visibility="protected">
+        <ownedParameter xmi:id="_aMV6gUcjEeiOfYMRNMt5hQ" name="background" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6gkcjEeiOfYMRNMt5hQ" name="getWidth" visibility="public">
+        <ownedParameter xmi:id="_aMV6g0cjEeiOfYMRNMt5hQ" name="return" type="_aMK7YkcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6hEcjEeiOfYMRNMt5hQ" name="setWidth" visibility="protected">
+        <ownedParameter xmi:id="_aMV6hUcjEeiOfYMRNMt5hQ" name="width" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6hkcjEeiOfYMRNMt5hQ" name="getHeight" visibility="public">
+        <ownedParameter xmi:id="_aMV6h0cjEeiOfYMRNMt5hQ" name="return" type="_aMK7YkcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6iEcjEeiOfYMRNMt5hQ" name="setHeight" visibility="protected">
+        <ownedParameter xmi:id="_aMV6iUcjEeiOfYMRNMt5hQ" name="height" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6ikcjEeiOfYMRNMt5hQ" name="getX" visibility="public">
+        <ownedParameter xmi:id="_aMV6i0cjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6jEcjEeiOfYMRNMt5hQ" name="getXMiddle" visibility="public">
+        <ownedParameter xmi:id="_aMV6jUcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMV6jkcjEeiOfYMRNMt5hQ" name="setX" visibility="protected">
+        <ownedParameter xmi:id="_aMV6j0cjEeiOfYMRNMt5hQ" name="x" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMWhkEcjEeiOfYMRNMt5hQ" name="getY" visibility="public">
+        <ownedParameter xmi:id="_aMWhkUcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMWhkkcjEeiOfYMRNMt5hQ" name="setY" visibility="protected">
+        <ownedParameter xmi:id="_aMWhk0cjEeiOfYMRNMt5hQ" name="y" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMWhlEcjEeiOfYMRNMt5hQ" name="render" visibility="protected">
+        <ownedParameter xmi:id="_aMWhlUcjEeiOfYMRNMt5hQ" name="g" type="_aMK7ZEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMWhlkcjEeiOfYMRNMt5hQ" name="render" visibility="protected">
+        <ownedParameter xmi:id="_aMWhl0cjEeiOfYMRNMt5hQ" name="g" type="_aMK7ZUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMK7ZkcjEeiOfYMRNMt5hQ" name="TutorVolleyButton" visibility="public">
+      <generalization xmi:id="_aMK7Z0cjEeiOfYMRNMt5hQ" general="_aMKUUUcjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMSQJkcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMSQJ0cjEeiOfYMRNMt5hQ" name="iBackground" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMSQKEcjEeiOfYMRNMt5hQ" name="x" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMSQKUcjEeiOfYMRNMt5hQ" name="y" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMSQKkcjEeiOfYMRNMt5hQ" name="width" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMS3MEcjEeiOfYMRNMt5hQ" name="height" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMS3MUcjEeiOfYMRNMt5hQ" name="function" type="_aMJtREcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMS3MkcjEeiOfYMRNMt5hQ" name="isBOver" visibility="protected">
+        <ownedParameter xmi:id="_aMS3M0cjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMS3NEcjEeiOfYMRNMt5hQ" name="setBOver" visibility="protected">
+        <ownedParameter xmi:id="_aMS3NUcjEeiOfYMRNMt5hQ" name="bOver" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMS3NkcjEeiOfYMRNMt5hQ" name="isBPressed" visibility="protected">
+        <ownedParameter xmi:id="_aMS3N0cjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMS3OEcjEeiOfYMRNMt5hQ" name="setBPressed" visibility="protected">
+        <ownedParameter xmi:id="_aMS3OUcjEeiOfYMRNMt5hQ" name="bPressed" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMS3OkcjEeiOfYMRNMt5hQ" name="isBVisible" visibility="protected">
+        <ownedParameter xmi:id="_aMS3O0cjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMS3PEcjEeiOfYMRNMt5hQ" name="setBVisible" visibility="protected">
+        <ownedParameter xmi:id="_aMS3PUcjEeiOfYMRNMt5hQ" name="bVisible" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMS3PkcjEeiOfYMRNMt5hQ" name="getFunction" visibility="protected">
+        <ownedParameter xmi:id="_aMTeQEcjEeiOfYMRNMt5hQ" name="return" type="_aMJtREcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMTeQUcjEeiOfYMRNMt5hQ" name="setFunction" visibility="protected">
+        <ownedParameter xmi:id="_aMTeQkcjEeiOfYMRNMt5hQ" name="function" type="_aMJtREcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMTeQ0cjEeiOfYMRNMt5hQ" name="getMove" visibility="protected">
+        <ownedParameter xmi:id="_aMTeREcjEeiOfYMRNMt5hQ" name="x" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMTeRUcjEeiOfYMRNMt5hQ" name="y" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMTeRkcjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMTeR0cjEeiOfYMRNMt5hQ" name="getPressed" visibility="protected">
+        <ownedParameter xmi:id="_aMTeSEcjEeiOfYMRNMt5hQ" name="x" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMTeSUcjEeiOfYMRNMt5hQ" name="y" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMTeSkcjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMTeS0cjEeiOfYMRNMt5hQ" name="getReleased" visibility="protected">
+        <ownedParameter xmi:id="_aMTeTEcjEeiOfYMRNMt5hQ" name="x" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMTeTUcjEeiOfYMRNMt5hQ" name="y" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMTeTkcjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMTeT0cjEeiOfYMRNMt5hQ" name="render" visibility="protected">
+        <ownedParameter xmi:id="_aMTeUEcjEeiOfYMRNMt5hQ" name="g" type="_aMK7ZEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMLicEcjEeiOfYMRNMt5hQ" name="TutorVolleyCircle2D" visibility="public">
+      <generalization xmi:id="_aMLicUcjEeiOfYMRNMt5hQ" general="_aMJtQEcjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMUFUEcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMUFUUcjEeiOfYMRNMt5hQ" name="circle_x" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFUkcjEeiOfYMRNMt5hQ" name="circle_y" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFU0cjEeiOfYMRNMt5hQ" name="circle_radius" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUFVEcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMUFVUcjEeiOfYMRNMt5hQ" name="circle_x" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFVkcjEeiOfYMRNMt5hQ" name="circle_y" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFV0cjEeiOfYMRNMt5hQ" name="circle_radius" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFWEcjEeiOfYMRNMt5hQ" name="rectangle_x" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFWUcjEeiOfYMRNMt5hQ" name="rectangle_y" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFWkcjEeiOfYMRNMt5hQ" name="rectangle_width" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUFW0cjEeiOfYMRNMt5hQ" name="rectangle_height" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUFXEcjEeiOfYMRNMt5hQ" name="getCircleX" visibility="public">
+        <ownedParameter xmi:id="_aMUFXUcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUsYEcjEeiOfYMRNMt5hQ" name="getCircleY" visibility="public">
+        <ownedParameter xmi:id="_aMUsYUcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUsYkcjEeiOfYMRNMt5hQ" name="getCircleRadius" visibility="public">
+        <ownedParameter xmi:id="_aMUsY0cjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUsZEcjEeiOfYMRNMt5hQ" name="getRectangleX" visibility="public">
+        <ownedParameter xmi:id="_aMUsZUcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUsZkcjEeiOfYMRNMt5hQ" name="getRectangleY" visibility="public">
+        <ownedParameter xmi:id="_aMUsZ0cjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUsaEcjEeiOfYMRNMt5hQ" name="getRectangleWidth" visibility="public">
+        <ownedParameter xmi:id="_aMUsaUcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUsakcjEeiOfYMRNMt5hQ" name="getRectangleHeight" visibility="public">
+        <ownedParameter xmi:id="_aMUsa0cjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMUsbEcjEeiOfYMRNMt5hQ" name="intersects" visibility="public">
+        <ownedParameter xmi:id="_aMUsbUcjEeiOfYMRNMt5hQ" name="circle" type="_aMLicEcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMUsbkcjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMLickcjEeiOfYMRNMt5hQ" name="TutorVolleyClassLoader" visibility="public">
+      <generalization xmi:id="_aMLidEcjEeiOfYMRNMt5hQ" general="_aMLic0cjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMVTcEcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMVTcUcjEeiOfYMRNMt5hQ" name="rootDir" type="_aMJtREcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMVTckcjEeiOfYMRNMt5hQ" name="loadClass" visibility="protected">
+        <ownedParameter xmi:id="_aMVTc0cjEeiOfYMRNMt5hQ" name="name" type="_aMJtREcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMVTdEcjEeiOfYMRNMt5hQ" name="resolve" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMVTdUcjEeiOfYMRNMt5hQ" name="return" type="_aMMJgEcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMMJgkcjEeiOfYMRNMt5hQ" name="TutorVolleyImage" visibility="public">
+      <generalization xmi:id="_aMMwkEcjEeiOfYMRNMt5hQ" general="_aMMJhEcjEeiOfYMRNMt5hQ"/>
+      <interfaceRealization xmi:id="_aMMJhUcjEeiOfYMRNMt5hQ" client="_aMMJgkcjEeiOfYMRNMt5hQ" supplier="_aMMJg0cjEeiOfYMRNMt5hQ" contract="_aMMJg0cjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMWhmEcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public"/>
+      <ownedOperation xmi:id="_aMWhmUcjEeiOfYMRNMt5hQ" name="getWidth" visibility="public">
+        <ownedParameter xmi:id="_aMWhmkcjEeiOfYMRNMt5hQ" name="return" type="_aMK7YkcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMXIoEcjEeiOfYMRNMt5hQ" name="getHeight" visibility="public">
+        <ownedParameter xmi:id="_aMXIoUcjEeiOfYMRNMt5hQ" name="return" type="_aMK7YkcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMXIokcjEeiOfYMRNMt5hQ" name="setPicsMain" visibility="public">
+        <ownedParameter xmi:id="_aMXIo0cjEeiOfYMRNMt5hQ" name="BildString" type="_aMJtREcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXIpEcjEeiOfYMRNMt5hQ" name="bLoad" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXIpUcjEeiOfYMRNMt5hQ" name="return" type="_aMK7YUcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMXIpkcjEeiOfYMRNMt5hQ" name="getBufferedImage" visibility="public">
+        <ownedParameter xmi:id="_aMXIp0cjEeiOfYMRNMt5hQ" name="img" type="_aMMwkUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXIqEcjEeiOfYMRNMt5hQ" name="return" type="_aMK7YUcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMXIqUcjEeiOfYMRNMt5hQ" name="imageUpdate" visibility="public">
+        <ownedParameter xmi:id="_aMXIqkcjEeiOfYMRNMt5hQ" name="arg0" type="_aMMwkUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXIq0cjEeiOfYMRNMt5hQ" name="arg1" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXIrEcjEeiOfYMRNMt5hQ" name="arg2" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXIrUcjEeiOfYMRNMt5hQ" name="arg3" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXIrkcjEeiOfYMRNMt5hQ" name="arg4" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXvsEcjEeiOfYMRNMt5hQ" name="arg5" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMXvsUcjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMMwkkcjEeiOfYMRNMt5hQ" name="TutorVolleyMain" visibility="public">
+      <generalization xmi:id="_aMMwlkcjEeiOfYMRNMt5hQ" general="_aMMwlUcjEeiOfYMRNMt5hQ"/>
+      <ownedAttribute xmi:id="_aMXvskcjEeiOfYMRNMt5hQ" name="tutorVolleyMain" visibility="public" isStatic="true" type="_aMMwkkcjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMXvs0cjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public"/>
+      <ownedOperation xmi:id="_aMXvtEcjEeiOfYMRNMt5hQ" name="getPreferredSize" visibility="public">
+        <ownedParameter xmi:id="_aMXvtUcjEeiOfYMRNMt5hQ" name="return" type="_aMMwl0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMXvtkcjEeiOfYMRNMt5hQ" name="setGame" visibility="public"/>
+      <ownedOperation xmi:id="_aMXvt0cjEeiOfYMRNMt5hQ" name="setOptions" visibility="public"/>
+      <ownedOperation xmi:id="_aMXvuEcjEeiOfYMRNMt5hQ" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_aMXvuUcjEeiOfYMRNMt5hQ" name="args" type="_aMNXoEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMNXoUcjEeiOfYMRNMt5hQ" name="TutorVolleyPanelGame" visibility="public">
+      <generalization xmi:id="_aMNXpkcjEeiOfYMRNMt5hQ" general="_aMNXpEcjEeiOfYMRNMt5hQ"/>
+      <ownedAttribute xmi:id="_aMXvukcjEeiOfYMRNMt5hQ" name="WAIT_TIME" visibility="public" isLeaf="true" type="_aMK7YkcjEeiOfYMRNMt5hQ" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_aMXvu0cjEeiOfYMRNMt5hQ" name="PLAYER_ONE" visibility="public" isLeaf="true" isStatic="true" type="_aMK7YkcjEeiOfYMRNMt5hQ" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_aMXvvEcjEeiOfYMRNMt5hQ" name="PLAYER_TWO" visibility="public" isLeaf="true" isStatic="true" type="_aMK7YkcjEeiOfYMRNMt5hQ" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_aMXvvUcjEeiOfYMRNMt5hQ" name="BALL" visibility="public" isLeaf="true" isStatic="true" type="_aMK7YkcjEeiOfYMRNMt5hQ" isReadOnly="true"/>
+      <interfaceRealization xmi:id="_aMNXpUcjEeiOfYMRNMt5hQ" client="_aMNXoUcjEeiOfYMRNMt5hQ" supplier="_aMNXo0cjEeiOfYMRNMt5hQ" contract="_aMNXo0cjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMXvvkcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMXvv0cjEeiOfYMRNMt5hQ" name="tutorVolleyMain" type="_aMMwkkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMYWwEcjEeiOfYMRNMt5hQ" name="iBackground" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMYWwUcjEeiOfYMRNMt5hQ" name="init" visibility="protected"/>
+      <ownedOperation xmi:id="_aMYWwkcjEeiOfYMRNMt5hQ" name="setAI" visibility="protected">
+        <ownedParameter xmi:id="_aMYWw0cjEeiOfYMRNMt5hQ" name="player" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMYWxEcjEeiOfYMRNMt5hQ" name="tutorVolleyAI" type="_aMJGMEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMYWxUcjEeiOfYMRNMt5hQ" name="getPlayer" visibility="protected">
+        <ownedParameter xmi:id="_aMYWxkcjEeiOfYMRNMt5hQ" name="return" type="_aMN-sEcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMYWx0cjEeiOfYMRNMt5hQ" name="stop" visibility="protected"/>
+      <ownedOperation xmi:id="_aMYWyEcjEeiOfYMRNMt5hQ" name="think" visibility="protected"/>
+      <ownedOperation xmi:id="_aMYWyUcjEeiOfYMRNMt5hQ" name="think" visibility="protected">
+        <ownedParameter xmi:id="_aMYWykcjEeiOfYMRNMt5hQ" name="value" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMYWy0cjEeiOfYMRNMt5hQ" name="setPoint" visibility="protected">
+        <ownedParameter xmi:id="_aMYWzEcjEeiOfYMRNMt5hQ" name="bPoint" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMYWzUcjEeiOfYMRNMt5hQ" name="keyTyped" visibility="public">
+        <ownedParameter xmi:id="_aMYWzkcjEeiOfYMRNMt5hQ" name="e" type="_aMN-sUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMYWz0cjEeiOfYMRNMt5hQ" name="keyPressed" visibility="public">
+        <ownedParameter xmi:id="_aMYW0EcjEeiOfYMRNMt5hQ" name="e" type="_aMN-sUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMYW0UcjEeiOfYMRNMt5hQ" name="keyReleased" visibility="public">
+        <ownedParameter xmi:id="_aMYW0kcjEeiOfYMRNMt5hQ" name="e" type="_aMN-sUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMY90EcjEeiOfYMRNMt5hQ" name="paintComponent" visibility="public">
+        <ownedParameter xmi:id="_aMY90UcjEeiOfYMRNMt5hQ" name="g" type="_aMK7ZUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_aMN-sEcjEeiOfYMRNMt5hQ" name="TutorVolleyPlayer[]" isLeaf="true" isAbstract="true">
+      <eAnnotations xmi:id="_aMdPQEcjEeiOfYMRNMt5hQ" source="Jar2UML">
+        <details xmi:id="_aMdPQUcjEeiOfYMRNMt5hQ" key="inferred" value="true"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMN-skcjEeiOfYMRNMt5hQ" name="TutorVolleyPanelOptions" visibility="public">
+      <generalization xmi:id="_aMN-t0cjEeiOfYMRNMt5hQ" general="_aMNXpEcjEeiOfYMRNMt5hQ"/>
+      <interfaceRealization xmi:id="_aMN-tUcjEeiOfYMRNMt5hQ" client="_aMN-skcjEeiOfYMRNMt5hQ" supplier="_aMN-s0cjEeiOfYMRNMt5hQ" contract="_aMN-s0cjEeiOfYMRNMt5hQ"/>
+      <interfaceRealization xmi:id="_aMN-tkcjEeiOfYMRNMt5hQ" client="_aMN-skcjEeiOfYMRNMt5hQ" supplier="_aMN-tEcjEeiOfYMRNMt5hQ" contract="_aMN-tEcjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMY90kcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMY900cjEeiOfYMRNMt5hQ" name="tutorVolleyMain" type="_aMMwkkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMY91EcjEeiOfYMRNMt5hQ" name="iBackground" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMY91UcjEeiOfYMRNMt5hQ" name="setAI" visibility="protected"/>
+      <ownedOperation xmi:id="_aMY91kcjEeiOfYMRNMt5hQ" name="setApoVolleyPanelGame" visibility="protected">
+        <ownedParameter xmi:id="_aMY910cjEeiOfYMRNMt5hQ" name="tutorVolleyPanelGame" type="_aMNXoUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMY92EcjEeiOfYMRNMt5hQ" name="mouseDragged" visibility="public">
+        <ownedParameter xmi:id="_aMY92UcjEeiOfYMRNMt5hQ" name="arg0" type="_aMOlwEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMY92kcjEeiOfYMRNMt5hQ" name="mouseMoved" visibility="public">
+        <ownedParameter xmi:id="_aMY920cjEeiOfYMRNMt5hQ" name="e" type="_aMOlwEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMY93EcjEeiOfYMRNMt5hQ" name="mouseClicked" visibility="public">
+        <ownedParameter xmi:id="_aMY93UcjEeiOfYMRNMt5hQ" name="e" type="_aMOlwEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMY93kcjEeiOfYMRNMt5hQ" name="mousePressed" visibility="public">
+        <ownedParameter xmi:id="_aMY930cjEeiOfYMRNMt5hQ" name="e" type="_aMOlwEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMY94EcjEeiOfYMRNMt5hQ" name="mouseReleased" visibility="public">
+        <ownedParameter xmi:id="_aMY94UcjEeiOfYMRNMt5hQ" name="e" type="_aMOlwEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMZk4EcjEeiOfYMRNMt5hQ" name="mouseEntered" visibility="public">
+        <ownedParameter xmi:id="_aMZk4UcjEeiOfYMRNMt5hQ" name="e" type="_aMOlwEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMZk4kcjEeiOfYMRNMt5hQ" name="mouseExited" visibility="public">
+        <ownedParameter xmi:id="_aMZk40cjEeiOfYMRNMt5hQ" name="e" type="_aMOlwEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMZk5EcjEeiOfYMRNMt5hQ" name="paintComponent" visibility="public">
+        <ownedParameter xmi:id="_aMZk5UcjEeiOfYMRNMt5hQ" name="g" type="_aMK7ZUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMOlwUcjEeiOfYMRNMt5hQ" name="TutorVolleyPlayer" visibility="public">
+      <generalization xmi:id="_aMOlwkcjEeiOfYMRNMt5hQ" general="_aMKUUUcjEeiOfYMRNMt5hQ"/>
+      <ownedAttribute xmi:id="_aMZk5kcjEeiOfYMRNMt5hQ" name="DIR_LEFT" visibility="public" isLeaf="true" isStatic="true" type="_aMKUU0cjEeiOfYMRNMt5hQ" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_aMZk50cjEeiOfYMRNMt5hQ" name="DIR_RIGHT" visibility="public" isLeaf="true" isStatic="true" type="_aMKUU0cjEeiOfYMRNMt5hQ" isReadOnly="true"/>
+      <ownedOperation xmi:id="_aMZk6EcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMZk6UcjEeiOfYMRNMt5hQ" name="iPlayer" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMZk6kcjEeiOfYMRNMt5hQ" name="x" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMZk60cjEeiOfYMRNMt5hQ" name="y" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMZk7EcjEeiOfYMRNMt5hQ" name="width" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMZk7UcjEeiOfYMRNMt5hQ" name="height" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMZk7kcjEeiOfYMRNMt5hQ" name="init" visibility="protected"/>
+      <ownedOperation xmi:id="_aMaL8EcjEeiOfYMRNMt5hQ" name="getEnemy" visibility="public">
+        <ownedParameter xmi:id="_aMaL8UcjEeiOfYMRNMt5hQ" name="return" type="_aMKUUUcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMaL8kcjEeiOfYMRNMt5hQ" name="setEnemy" visibility="protected">
+        <ownedParameter xmi:id="_aMaL80cjEeiOfYMRNMt5hQ" name="enemy" type="_aMKUUUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMaL9EcjEeiOfYMRNMt5hQ" name="getXSpeed" visibility="protected">
+        <ownedParameter xmi:id="_aMaL9UcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMaL9kcjEeiOfYMRNMt5hQ" name="getYSpeed" visibility="protected">
+        <ownedParameter xmi:id="_aMaL90cjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMaL-EcjEeiOfYMRNMt5hQ" name="getPoints" visibility="public">
+        <ownedParameter xmi:id="_aMaL-UcjEeiOfYMRNMt5hQ" name="return" type="_aMK7YkcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMaL-kcjEeiOfYMRNMt5hQ" name="setPoints" visibility="protected"/>
+      <ownedOperation xmi:id="_aMaL-0cjEeiOfYMRNMt5hQ" name="setPoints" visibility="protected">
+        <ownedParameter xmi:id="_aMaL_EcjEeiOfYMRNMt5hQ" name="points" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMaL_UcjEeiOfYMRNMt5hQ" name="getName" visibility="protected">
+        <ownedParameter xmi:id="_aMaL_kcjEeiOfYMRNMt5hQ" name="return" type="_aMJtREcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMaL_0cjEeiOfYMRNMt5hQ" name="getAuthorName" visibility="protected">
+        <ownedParameter xmi:id="_aMazAEcjEeiOfYMRNMt5hQ" name="return" type="_aMJtREcjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMazAUcjEeiOfYMRNMt5hQ" name="setDirection" visibility="public">
+        <ownedParameter xmi:id="_aMazAkcjEeiOfYMRNMt5hQ" name="xSpeed" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMazA0cjEeiOfYMRNMt5hQ" name="setDirection" visibility="public">
+        <ownedParameter xmi:id="_aMazBEcjEeiOfYMRNMt5hQ" name="xSpeed" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMazBUcjEeiOfYMRNMt5hQ" name="setAI" visibility="protected">
+        <ownedParameter xmi:id="_aMazBkcjEeiOfYMRNMt5hQ" name="apoVolleyAI" type="_aMJGMEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMazB0cjEeiOfYMRNMt5hQ" name="getAverageTime" visibility="protected">
+        <ownedParameter xmi:id="_aMazCEcjEeiOfYMRNMt5hQ" name="return" type="_aMKUU0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMazCUcjEeiOfYMRNMt5hQ" name="think" visibility="protected">
+        <ownedParameter xmi:id="_aMazCkcjEeiOfYMRNMt5hQ" name="ball" type="_aMKUUEcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMazC0cjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMPM0EcjEeiOfYMRNMt5hQ" name="TutorVolleySnow" visibility="public">
+      <generalization xmi:id="_aMPM0UcjEeiOfYMRNMt5hQ" general="_aMKUUUcjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMbaEEcjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMbaEUcjEeiOfYMRNMt5hQ" name="snow" type="_aMK7YUcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMbaEkcjEeiOfYMRNMt5hQ" name="x" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMbaE0cjEeiOfYMRNMt5hQ" name="y" type="_aMKUU0cjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMbaFEcjEeiOfYMRNMt5hQ" name="width" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+        <ownedParameter xmi:id="_aMbaFUcjEeiOfYMRNMt5hQ" name="height" type="_aMK7YkcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMbaFkcjEeiOfYMRNMt5hQ" name="think" visibility="protected"/>
+      <ownedOperation xmi:id="_aMbaF0cjEeiOfYMRNMt5hQ" name="render" visibility="protected">
+        <ownedParameter xmi:id="_aMbaGEcjEeiOfYMRNMt5hQ" name="g" type="_aMK7ZEcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMbaGUcjEeiOfYMRNMt5hQ" name="render" visibility="protected">
+        <ownedParameter xmi:id="_aMbaGkcjEeiOfYMRNMt5hQ" name="g" type="_aMK7ZUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aMPM0kcjEeiOfYMRNMt5hQ" name="TutorVolleyTimer" visibility="public">
+      <generalization xmi:id="_aMPM1UcjEeiOfYMRNMt5hQ" general="_aMPM1EcjEeiOfYMRNMt5hQ"/>
+      <ownedOperation xmi:id="_aMbaG0cjEeiOfYMRNMt5hQ" name="&lt;init>" visibility="public">
+        <ownedParameter xmi:id="_aMbaHEcjEeiOfYMRNMt5hQ" name="tutorVolleyPanelGame" type="_aMNXoUcjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMbaHUcjEeiOfYMRNMt5hQ" name="isBRunning" visibility="protected">
+        <ownedParameter xmi:id="_aMbaHkcjEeiOfYMRNMt5hQ" name="return" type="_aMJtQ0cjEeiOfYMRNMt5hQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMcBIEcjEeiOfYMRNMt5hQ" name="setBRunning" visibility="protected">
+        <ownedParameter xmi:id="_aMcBIUcjEeiOfYMRNMt5hQ" name="bRunning" type="_aMJtQ0cjEeiOfYMRNMt5hQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_aMcBIkcjEeiOfYMRNMt5hQ" name="run" visibility="public"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_aMJGMUcjEeiOfYMRNMt5hQ" name="java">
+    <eAnnotations xmi:id="_aMedfEcjEeiOfYMRNMt5hQ" source="Jar2UML">
+      <details xmi:id="_aMedfUcjEeiOfYMRNMt5hQ" key="inferred" value="true"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Package" xmi:id="_aMJGMkcjEeiOfYMRNMt5hQ" name="lang">
+      <packagedElement xmi:type="uml:Class" xmi:id="_aMJtQEcjEeiOfYMRNMt5hQ" name="Object" isAbstract="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_aMJtQ0cjEeiOfYMRNMt5hQ" name="boolean"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_aMJtREcjEeiOfYMRNMt5hQ" name="String" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_aMKUU0cjEeiOfYMRNMt5hQ" name="double"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_aMK7YkcjEeiOfYMRNMt5hQ" name="int"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aMLic0cjEeiOfYMRNMt5hQ" name="ClassLoader" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_aMMJgEcjEeiOfYMRNMt5hQ" name="Class" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_aMNXoEcjEeiOfYMRNMt5hQ" name="String[]" isLeaf="true" isAbstract="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_aMKUVEcjEeiOfYMRNMt5hQ" name="awt">
+      <packagedElement xmi:type="uml:Package" xmi:id="_aMK7YEcjEeiOfYMRNMt5hQ" name="image">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_aMK7YUcjEeiOfYMRNMt5hQ" name="BufferedImage" isLeaf="true" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_aMMJg0cjEeiOfYMRNMt5hQ" name="ImageObserver" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_aMK7ZEcjEeiOfYMRNMt5hQ" name="Graphics2D" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_aMK7ZUcjEeiOfYMRNMt5hQ" name="Graphics" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aMMJhEcjEeiOfYMRNMt5hQ" name="Component" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_aMMwkUcjEeiOfYMRNMt5hQ" name="Image" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_aMMwl0cjEeiOfYMRNMt5hQ" name="Dimension" isLeaf="true" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_aMNXokcjEeiOfYMRNMt5hQ" name="event">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_aMNXo0cjEeiOfYMRNMt5hQ" name="KeyListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_aMN-sUcjEeiOfYMRNMt5hQ" name="KeyEvent" isLeaf="true" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_aMN-s0cjEeiOfYMRNMt5hQ" name="MouseMotionListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_aMN-tEcjEeiOfYMRNMt5hQ" name="MouseListener" isAbstract="true"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_aMOlwEcjEeiOfYMRNMt5hQ" name="MouseEvent" isLeaf="true" isAbstract="true"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_aMPM00cjEeiOfYMRNMt5hQ" name="util">
+      <packagedElement xmi:type="uml:Class" xmi:id="_aMPM1EcjEeiOfYMRNMt5hQ" name="TimerTask" isAbstract="true"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_aMMwk0cjEeiOfYMRNMt5hQ" name="javax">
+    <eAnnotations xmi:id="_aMedhEcjEeiOfYMRNMt5hQ" source="Jar2UML">
+      <details xmi:id="_aMedhUcjEeiOfYMRNMt5hQ" key="inferred" value="true"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Package" xmi:id="_aMMwlEcjEeiOfYMRNMt5hQ" name="swing">
+      <packagedElement xmi:type="uml:Class" xmi:id="_aMMwlUcjEeiOfYMRNMt5hQ" name="JFrame" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aMNXpEcjEeiOfYMRNMt5hQ" name="JPanel" isAbstract="true"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

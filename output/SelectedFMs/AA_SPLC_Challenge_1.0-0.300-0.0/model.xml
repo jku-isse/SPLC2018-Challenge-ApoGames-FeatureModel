@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="Root">
+				<and mandatory="true" name="ApoBase">
+					<feature name="Editor"/>
+					<or abstract="true" mandatory="true" name="Group1_Alt">
+						<feature mandatory="true" name="Menu"/>
+					</or>
+					<or abstract="true" mandatory="true" name="Group2_Or">
+						<and mandatory="true" name="Scores">
+							<alt abstract="true" mandatory="true" name="Group3_Alt">
+								<and mandatory="true" name="PlayWithKeyBoard">
+									<or abstract="true" mandatory="true" name="Group4_Or">
+										<feature mandatory="true" name="Time"/>
+									</or>
+								</and>
+								<feature mandatory="true" name="PlayWithMouse"/>
+							</alt>
+							<alt abstract="true" mandatory="true" name="Group5_Alt">
+								<and mandatory="true" name="Play">
+									<feature name="Stop"/>
+								</and>
+							</alt>
+							<and name="Restart">
+								<feature mandatory="true" name="Load"/>
+							</and>
+						</and>
+						<feature mandatory="true" name="HighScore"/>
+					</or>
+					<feature name="Sound"/>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<disj>
+					<not>
+						<var>HighScore</var>
+					</not>
+					<var>Load</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Sound</var>
+					</not>
+					<not>
+						<var>Play</var>
+					</not>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Stop</var>
+					</not>
+					<not>
+						<var>HighScore</var>
+					</not>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PlayWithKeyBoard</var>
+					</not>
+					<var>Editor</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PlayWithMouse</var>
+					</not>
+					<var>Stop</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Scores</var>
+					</not>
+					<not>
+						<var>Sound</var>
+					</not>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Editor</var>
+					</not>
+					<var>Load</var>
+				</disj>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
